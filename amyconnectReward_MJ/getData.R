@@ -2,13 +2,12 @@ library(dplyr)
 library(tidyr)
 library(ggvis)
 library(RMySQL)
-# connect to SQL server
-con <- dbConnect(RMySQL::MySQL(),host='arnold.wpic.upmc.edu', 'lncddb3_test','lncd','B@ngal0re')
 
 lunas <- read.table('lunas.txt',sep="_")
 names(lunas)<-c('LunaID','dateOfScan')
 lunas$dateOfScan <-  as.Date(as.character(lunas$dateOfScan),format="%Y%m%d")
 
+# SQL code to get all the suvery data we are interested in
 cumlquery <- "
 select pe.value as LunaID,DOB, age as surveyage, taskName, subsection, vt.value
  from visitsTasks as vt 
@@ -28,23 +27,29 @@ select pe.value as LunaID,DOB, age as surveyage, taskName, subsection, vt.value
     'asrTAnxProb','asrTInternal', 'asrTAnxDep',  'asrTThoProb','asrTWithdrawn'
     )"
 
+# connect to SQL server
+con <- dbConnect(RMySQL::MySQL(),host='arnold.wpic.upmc.edu', 'lncddb3_test','lncd','B@ngal0re')
+# and get query results
 db.res <- dbGetQuery(con,cumlquery)
 
 # merge results with provided list
 db.mrg <- merge(db.res,lunas)
 df.full <- db.mrg %>% mutate(scanage=as.vector(difftime(dateOfScan,DOB,units="days")/365.25)) %>% select(-DOB) 
 
+# rename ysr/asr so we only get one metric closest to the scan
 df.sr <- df.full %>% mutate(agediff=round(surveyage-scanage,3)) %>%
      mutate(taskName=gsub('^YSR|^ASR','SR',taskName)) %>%  # merge ysr and asr for good
      mutate(subsection=gsub('^ysr|^asr','sr',subsection)) %>%  
      mutate(subsection=gsub('srTWithDep','srTWithdrawn',subsection)) 
 
+# save this giant thing with all the values
 write.csv(df.sr,file="LunaSelectSurvey_AllValues.csv",row.names=F,quote=F)
+
 # select values closest to scan date, spread into wide format
 # for aduit, provide agediff
 dt.tab.age <-df.sr %>% 
      unite(tasksec,c(taskName,subsection)) %>%
-     group_by(LunaID,tasksec) %>%
+     group_by(LunaID,dateOfScan,tasksec) %>%
      filter(min_rank(abs(agediff))==1) %>%
      ungroup %>%
      select(-surveyage) %>% 
