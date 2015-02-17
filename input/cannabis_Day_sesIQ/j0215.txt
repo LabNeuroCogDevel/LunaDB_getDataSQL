@@ -1,0 +1,18 @@
+/input	file = '/home/young/t2eppie2/adult/luna/j0215.dat'.
+	var = 6.
+/var	names = id,
+	tlmar_c,tledu_c,tlwrk_c,tlpinc_c,livewP_c.
+	miss = (2)5*99999.
+
+NUMBER OF CASES READ. . . . . . . . . . . . . .      86
+
+ VARIABLE    TOTAL         STANDARD  ST.ERR   COEFF     SMALLEST      LARGEST
+ NO. NAME     FREQ.  MEAN    DEV.   OF MEAN  OF VAR  VALUE  Z-SCR  VALUE  Z-SCR
+
+   1 id          86  812.13  396.76  42.784  .48854  75.000 -1.86  1504.0  1.74
+   2 tlmar_c     86  .22093  .41731  .04500  1.8889  0.0000 -0.53  1.0000  1.87
+   3 tledu_c     86  13.895  1.9037  .20529  .13701  9.0000 -2.57  18.000  2.16
+   4 tlwrk_c     86  .75581  .43212  .04660  .57173  0.0000 -1.75  1.0000  0.57
+   5 tlpinc_c    85  1704.0  1575.1  170.84  .92435  0.0000 -1.08  9000.0  4.63
+   6 livewP_c    86  .39535  .49179  .05303  1.2439  0.0000 -0.80  1.0000  1.23
+
