@@ -38,16 +38,13 @@ dt<-dbGetQuery(con,query)
 
 dt.wide <- dt %>% spread(IDt,ID) %>% spread(subsection,value) 
 
-# eth<-c('AmerIndianAlaskan','Asian','Black','HawaiianPacIsl',' Hispanic','White')
-# geteth <- function(x){
-#   eth[!is.na(x)]
-# }
-#dt.wide %>% head %>%group_by(peopleid,sex,age,hand,visitdate,LunaID,OHID,wfull2_t) %>%
-#   summarise_each(funs(function(x){!isna(x)}))
+# ugly way to collapse ethnicities
 eths <- c('AmerIndianAlaskan','Asian','Black','HawaiianPacIsl','Hispanic','White')
 for(eth in eths) {
-  dt.wide[,eth] = ifelse(is.na(dt.wide[,eth]),'',eth)
+  dt.wide[,eth] = ifelse(is.na(dt.wide[,eth]),NA,eth)
 }
 dt.eth <- dt.wide %>% unite(eth,AmerIndianAlaskan,Asian,Black,HawaiianPacIsl,Hispanic,White) %>% 
-           mutate(eth=gsub('NA_','',eth))
+           mutate(eth=gsub('NA_|_NA','',eth))
+
+write.csv(dt.eth %>% select(-peopleid),file="CogVisits.csv",row.names=F)
 
