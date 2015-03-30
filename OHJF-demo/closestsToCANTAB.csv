@@ -38,28 +38,7 @@
 10173,"Easy","Colors","Medium","No","Hard-at end","Follow w/eyes (didn't work very well)","106","114"
 10174,"Easy","Colors, repeated in head","Easy","Nothing","Hard-at end","Followed w/eyes","109","115"
 10175,"Medium","Colors","Easy","No","Hard-at end","Kept going over seq. w/eyes","102","109"
-10176,"Easy","Colors and shapes-gave shapes names like o or f
-10176	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
-10176	0.0000	CANTABQuestionnaire	SSPStrategy	Followed w/eyes
-10176	0.0000	CANTABQuestionnaire	SSPDifficulty	Easy
-10176	0.0000	CANTABQuestionnaire	DMSDifficulty	Easy
-10176	1.1964	CANTABQuestionnaire	DMSDifficulty	Easy
-10176	1.1964	CANTABQuestionnaire	SSPDifficulty	Easy
-10176	1.1964	CANTABQuestionnaire	SOCDifficulty	Easy
-10176	2.9733	CANTABQuestionnaire	DMSDifficulty	Easy
-10176	2.9733	CANTABQuestionnaire	SOCDifficulty	Easy
-10176	2.9733	CANTABQuestionnaire	SSPStrategy	Only made it to 7 boxes
-10176	2.9733	CANTABQuestionnaire	SSPDifficulty	Easy
-10176	3.7618	WASI	wfull4	127
-10176	3.7618	WASI	wfull2	129
-10176	3.7618	CANTABQuestionnaire	SSPStrategy	Fingers on table
-10176	3.7618	CANTABQuestionnaire	SOCDifficulty	Easy
-10176	3.7618	CANTABQuestionnaire	SSPDifficulty	Medium
-10176	3.7618	CANTABQuestionnaire	SOCStrategy	No
-10176	3.7618	CANTABQuestionnaire	DMSDifficulty	Easy
-10176	1.1964	WASI	wfull4	107
-10176	1.1964	WASI	wfull2	103
-10176	1.1964	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like o or f","Easy","No","Easy","Fingers on table","103","107"
+10176,"Easy","Colors and shapes-gave shapes names like o or f","Easy","No","Easy","Followed w/eyes","103","107"
 10177,"Easy-Medium","Colors","Easy-Medium","Mapped out number of moves before doing in on comp","Medium","No","113","123"
 10178,"Easy-Medium","Colors","Medium","No","Hard-end","Follow the path","111","117"
 10179,"Easy","Mouth color pattern and description (ex: outline, ","Easy","Not really","Easy","Remembered finger pattern","114","123"
@@ -80,36 +59,7 @@
 10196,"Hard","Said every color","Easy",NA,"Hard","Said numbers and looked at boxes over and over aga","91","85"
 10197,"Medium","Remembered colors-said them out loud","Medium","Tried to plan ahead","Hard","Connect the dots to see patterns and which way t","96","91"
 10198,"Easy-Medium","Making designs in mind to remember pattern-giving ","Easy",NA,"Medium","Envisioned screen in head","114","111"
-10199,"Medium","Memorized color patterns and shapes, office build
-10199	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
-10199	0.0000	CANTABQuestionnaire	SOCStrategy	-
-10199	0.0000	WASI	wfull2	101
-10199	0.0000	WASI	wfull4	103
-10199	6.6366	CANTABQuestionnaire	DMSStrategy	Associate what the pattern looked like
-10199	6.6366	CANTABQuestionnaire	SSPStrategy	map-follow with my eyes. 9 squares were harder
-10199	6.6366	CANTABQuestionnaire	SOCDifficulty	Easy
-10199	6.6366	CANTABQuestionnaire	SSPDifficulty	Hard
-10199	6.6366	CANTABQuestionnaire	DMSDifficulty	Medium
-10199	6.6366	CANTABQuestionnaire	SOCStrategy	Not really
-10199	6.6366	WASI	wfull2	119
-10199	6.6366	WASI	wfull4	124
-10199	7.6468	CANTABQuestionnaire	SSPDifficulty	Easy
-10199	7.6468	CANTABQuestionnaire	SOCDifficulty	Easy
-10199	7.6468	CANTABQuestionnaire	DMSStrategy	associate what they look like to men w/ beards or 
-10199	7.6468	CANTABQuestionnaire	DMSDifficulty	Easy
-10199	7.6468	CANTABQuestionnaire	SOCStrategy	n/a
-10199	8.6790	CANTABQuestionnaire	SOCStrategy	no
-10199	8.6790	CANTABQuestionnaire	DMSDifficulty	Easy
-10199	8.6790	CANTABQuestionnaire	DMSStrategy	think of colors/shapes
-10199	8.6790	CANTABQuestionnaire	SSPDifficulty	Easy
-10199	8.6790	CANTABQuestionnaire	SOCDifficulty	Easy
-10199	8.6790	CANTABQuestionnaire	SSPStrategy	tried to copy pattern with fingers
-10199	8.6790	WASI	wfull2	126
-10199	8.6790	WASI	wfull4	127
-10199	6.6366	CANTABQuestionnaire	SOCDifficulty	Medium
-10199	6.6366	CANTABQuestionnaire	SSPStrategy	Made patterns-left, right, middle, etc.
-10199	6.6366	CANTABQuestionnaire	SSPDifficulty	Hard
-10199	6.6366	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, office build","Medium","Not really","Hard","Made patterns-left, right, middle, etc.","119","124"
+10199,"Medium","Memorized color patterns and shapes, office build","Medium","-","Hard","Made patterns-left, right, middle, etc.","101","103"
 10200,"Medium","Two boxes colors and design","Medium","Just Copy","Hard","1st describe location 2nd remember them","90","98"
 10201,"Easy","Remembered colors and shapes","Easy","No","Medium","Went through pattern over and over","111","120"
 10202,"Medium","Remembered colors and sometimes certain shapes if ","Easy","Sometimes thought through-planned","Hard","Moving eyes repeatedly to blocks","118","109"

@@ -12,7 +12,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10204	2.2204	WASI	wfull2	137
 10204	2.2204	WASI	wfull4	136
 10204	2.2204	CANTABQuestionnaire	SOCDifficulty	Medium
-10204	2.2204	CANTABQuestionnaire	SSPStrategy	"Top, left, right, etc." named direction
+10204	2.2204	CANTABQuestionnaire	SSPStrategy	Top, left, right, etc. named direction
 10204	2.2204	CANTABQuestionnaire	SSPDifficulty	Medium
 10204	2.2204	CANTABQuestionnaire	DMSStrategy	Remembered orded of colors, and gaps in colors
 10204	2.2204	CANTABQuestionnaire	SOCStrategy	No
@@ -44,7 +44,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10204	0.9966	WASI	wfull2	137
 10204	0.9966	WASI	wfull4	136
 10204	0.9966	CANTABQuestionnaire	SOCDifficulty	Medium
-10204	0.9966	CANTABQuestionnaire	SSPStrategy	"Top, left, right, etc." named direction
+10204	0.9966	CANTABQuestionnaire	SSPStrategy	Top, left, right, etc. named direction
 10204	0.9966	CANTABQuestionnaire	SSPDifficulty	Medium
 10204	0.9966	CANTABQuestionnaire	DMSStrategy	Remembered orded of colors, and gaps in colors
 10204	0.9966	CANTABQuestionnaire	SOCStrategy	No
@@ -76,7 +76,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10204	0.0000	WASI	wfull2	137
 10204	0.0000	WASI	wfull4	136
 10204	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
-10204	0.0000	CANTABQuestionnaire	SSPStrategy	"Top, left, right, etc." named direction
+10204	0.0000	CANTABQuestionnaire	SSPStrategy	Top, left, right, etc. named direction
 10204	0.0000	CANTABQuestionnaire	SSPDifficulty	Medium
 10204	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered orded of colors, and gaps in colors
 10204	0.0000	CANTABQuestionnaire	SOCStrategy	No
@@ -108,7 +108,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10204	1.1608	WASI	wfull2	137
 10204	1.1608	WASI	wfull4	136
 10204	1.1608	CANTABQuestionnaire	SOCDifficulty	Medium
-10204	1.1608	CANTABQuestionnaire	SSPStrategy	"Top, left, right, etc." named direction
+10204	1.1608	CANTABQuestionnaire	SSPStrategy	Top, left, right, etc. named direction
 10204	1.1608	CANTABQuestionnaire	SSPDifficulty	Medium
 10204	1.1608	CANTABQuestionnaire	DMSStrategy	Remembered orded of colors, and gaps in colors
 10204	1.1608	CANTABQuestionnaire	SOCStrategy	No
@@ -140,7 +140,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10204	2.0671	WASI	wfull2	137
 10204	2.0671	WASI	wfull4	136
 10204	2.0671	CANTABQuestionnaire	SOCDifficulty	Medium
-10204	2.0671	CANTABQuestionnaire	SSPStrategy	"Top, left, right, etc." named direction
+10204	2.0671	CANTABQuestionnaire	SSPStrategy	Top, left, right, etc. named direction
 10204	2.0671	CANTABQuestionnaire	SSPDifficulty	Medium
 10204	2.0671	CANTABQuestionnaire	DMSStrategy	Remembered orded of colors, and gaps in colors
 10204	2.0671	CANTABQuestionnaire	SOCStrategy	No
@@ -6960,7 +6960,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	6.6393	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	6.6393	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	6.6393	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	6.6393	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	6.6393	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	6.6393	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	6.6393	WASI	wfull4	132
 10186	6.6393	WASI	wfull2	123
@@ -7012,7 +7012,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	4.5147	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	4.5147	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	4.5147	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	4.5147	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	4.5147	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	4.5147	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	4.5147	WASI	wfull4	132
 10186	4.5147	WASI	wfull2	123
@@ -7064,7 +7064,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	3.3593	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	3.3593	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	3.3593	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	3.3593	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	3.3593	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	3.3593	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	3.3593	WASI	wfull4	132
 10186	3.3593	WASI	wfull2	123
@@ -7116,7 +7116,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	2.2834	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	2.2834	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	2.2834	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	2.2834	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	2.2834	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	2.2834	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	2.2834	WASI	wfull4	132
 10186	2.2834	WASI	wfull2	123
@@ -7168,7 +7168,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	0.0000	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	0.0000	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	0.0000	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	0.0000	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	0.0000	WASI	wfull4	132
 10186	0.0000	WASI	wfull2	123
@@ -7220,7 +7220,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	1.1910	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	1.1910	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	1.1910	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	1.1910	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	1.1910	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	1.1910	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	1.1910	WASI	wfull4	132
 10186	1.1910	WASI	wfull2	123
@@ -7272,7 +7272,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10186	2.5380	CANTABQuestionnaire	DMSDifficulty	Medium
 10186	2.5380	CANTABQuestionnaire	DMSStrategy	memorize colors and try to memorize 1 design
 10186	2.5380	CANTABQuestionnaire	SOCDifficulty	Easy
-10186	2.5380	CANTABQuestionnaire	SSPStrategy	memorize "network" and draw out in head the patter
+10186	2.5380	CANTABQuestionnaire	SSPStrategy	memorize network and draw out in head the patter
 10186	2.5380	CANTABQuestionnaire	SSPDifficulty	Medium
 10186	2.5380	WASI	wfull4	132
 10186	2.5380	WASI	wfull2	123
@@ -7934,7 +7934,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	0.0000	WASI	wfull2	106
 10173	0.0000	CANTABQuestionnaire	DMSStrategy	Colors
 10173	0.0000	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	0.0000	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	0.0000	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	0.0000	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	1.0185	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -7987,7 +7987,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	1.0185	WASI	wfull2	106
 10173	1.0185	CANTABQuestionnaire	DMSStrategy	Colors
 10173	1.0185	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	1.0185	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	1.0185	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	1.0185	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	1.0185	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8040,7 +8040,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	1.9795	WASI	wfull2	106
 10173	1.9795	CANTABQuestionnaire	DMSStrategy	Colors
 10173	1.9795	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	1.9795	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	1.9795	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	1.9795	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	1.9795	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	0.9610	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8093,7 +8093,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	2.9979	WASI	wfull2	106
 10173	2.9979	CANTABQuestionnaire	DMSStrategy	Colors
 10173	2.9979	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	2.9979	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	2.9979	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	2.9979	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	2.9979	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	1.9795	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8146,7 +8146,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	4.0055	WASI	wfull2	106
 10173	4.0055	CANTABQuestionnaire	DMSStrategy	Colors
 10173	4.0055	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	4.0055	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	4.0055	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	4.0055	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	4.0055	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	2.9870	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8199,7 +8199,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	6.7269	WASI	wfull2	106
 10173	6.7269	CANTABQuestionnaire	DMSStrategy	Colors
 10173	6.7269	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	6.7269	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	6.7269	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	6.7269	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	6.7269	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	5.7084	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8252,7 +8252,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	7.7536	WASI	wfull2	106
 10173	7.7536	CANTABQuestionnaire	DMSStrategy	Colors
 10173	7.7536	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	7.7536	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	7.7536	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	7.7536	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	7.7536	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	6.7351	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8305,7 +8305,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	8.7502	WASI	wfull2	106
 10173	8.7502	CANTABQuestionnaire	DMSStrategy	Colors
 10173	8.7502	CANTABQuestionnaire	SSPDifficulty	Hard-at end
-10173	8.7502	CANTABQuestionnaire	SSPStrategy	Follow w/eyes ("didn't work very well")
+10173	8.7502	CANTABQuestionnaire	SSPStrategy	Follow w/eyes (didn't work very well)
 10173	8.7502	CANTABQuestionnaire	SOCDifficulty	Medium
 10173	8.7502	CANTABQuestionnaire	DMSDifficulty	Easy
 10173	7.7317	CANTABQuestionnaire	SOCDifficulty	Medium
@@ -8354,7 +8354,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10173	0.0000	CANTABQuestionnaire	SSPDifficulty	Medium
 10173	0.0000	CANTABQuestionnaire	SSPStrategy	follow along
 10173	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
-10206	0.0000	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes "checkerboard"
+10206	0.0000	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes checkerboard
 10206	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10206	0.0000	WASI	wfull4	112
 10206	0.0000	WASI	wfull2	118
@@ -8381,7 +8381,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10206	4.6982	CANTABQuestionnaire	SOCDifficulty	Medium
 10206	4.6982	CANTABQuestionnaire	SSPStrategy	No
 10206	4.6982	CANTABQuestionnaire	DMSStrategy	Remembered colors and patterns (checkerboards)
-10206	1.2074	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes "checkerboard"
+10206	1.2074	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes checkerboard
 10206	1.2074	CANTABQuestionnaire	DMSDifficulty	Medium
 10206	1.2074	WASI	wfull4	112
 10206	1.2074	WASI	wfull2	118
@@ -8408,7 +8408,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10206	3.4908	CANTABQuestionnaire	SOCDifficulty	Medium
 10206	3.4908	CANTABQuestionnaire	SSPStrategy	No
 10206	3.4908	CANTABQuestionnaire	DMSStrategy	Remembered colors and patterns (checkerboards)
-10206	2.1656	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes "checkerboard"
+10206	2.1656	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes checkerboard
 10206	2.1656	CANTABQuestionnaire	DMSDifficulty	Medium
 10206	2.1656	WASI	wfull4	112
 10206	2.1656	WASI	wfull2	118
@@ -8435,7 +8435,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10206	2.5325	CANTABQuestionnaire	SOCDifficulty	Medium
 10206	2.5325	CANTABQuestionnaire	SSPStrategy	No
 10206	2.5325	CANTABQuestionnaire	DMSStrategy	Remembered colors and patterns (checkerboards)
-10206	3.6797	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes "checkerboard"
+10206	3.6797	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes checkerboard
 10206	3.6797	CANTABQuestionnaire	DMSDifficulty	Medium
 10206	3.6797	WASI	wfull4	112
 10206	3.6797	WASI	wfull2	118
@@ -8462,7 +8462,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10206	1.0185	CANTABQuestionnaire	SOCDifficulty	Medium
 10206	1.0185	CANTABQuestionnaire	SSPStrategy	No
 10206	1.0185	CANTABQuestionnaire	DMSStrategy	Remembered colors and patterns (checkerboards)
-10206	4.6982	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes "checkerboard"
+10206	4.6982	CANTABQuestionnaire	DMSStrategy	Said colors and associated shapes checkerboard
 10206	4.6982	CANTABQuestionnaire	DMSDifficulty	Medium
 10206	4.6982	WASI	wfull4	112
 10206	4.6982	WASI	wfull2	118
@@ -10633,7 +10633,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10252	0.0000	CANTABQuestionnaire	SSPDifficulty	Hard
 10252	0.0000	CANTABQuestionnaire	SSPStrategy	No
 10252	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
-10252	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked "checked", "full"
+10252	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked checked, full
 10252	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10252	0.0000	WASI	wfull4	87
 10252	0.0000	WASI	wfull2	87
@@ -10664,7 +10664,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10252	2.3409	CANTABQuestionnaire	SSPDifficulty	Hard
 10252	2.3409	CANTABQuestionnaire	SSPStrategy	No
 10252	2.3409	CANTABQuestionnaire	SOCDifficulty	Easy
-10252	2.3409	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked "checked", "full"
+10252	2.3409	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked checked, full
 10252	2.3409	CANTABQuestionnaire	DMSDifficulty	Medium
 10252	2.3409	WASI	wfull4	87
 10252	2.3409	WASI	wfull2	87
@@ -10695,7 +10695,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10252	3.2389	CANTABQuestionnaire	SSPDifficulty	Hard
 10252	3.2389	CANTABQuestionnaire	SSPStrategy	No
 10252	3.2389	CANTABQuestionnaire	SOCDifficulty	Easy
-10252	3.2389	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked "checked", "full"
+10252	3.2389	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked checked, full
 10252	3.2389	CANTABQuestionnaire	DMSDifficulty	Medium
 10252	3.2389	WASI	wfull4	87
 10252	3.2389	WASI	wfull2	87
@@ -10726,7 +10726,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10252	4.2190	CANTABQuestionnaire	SSPDifficulty	Hard
 10252	4.2190	CANTABQuestionnaire	SSPStrategy	No
 10252	4.2190	CANTABQuestionnaire	SOCDifficulty	Easy
-10252	4.2190	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked "checked", "full"
+10252	4.2190	CANTABQuestionnaire	DMSStrategy	Remembered the way they looked checked, full
 10252	4.2190	CANTABQuestionnaire	DMSDifficulty	Medium
 10252	4.2190	WASI	wfull4	87
 10252	4.2190	WASI	wfull2	87
@@ -12685,7 +12685,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10292	2.9843	CANTABQuestionnaire	SSPDifficulty	Medium
 10292	2.9843	CANTABQuestionnaire	SSPStrategy	Went over order in head pointed out pattern with f
 10292	2.9843	CANTABQuestionnaire	SOCDifficulty	Easy
-10292	2.9843	CANTABQuestionnaire	DMSStrategy	Remembered featuers that "popped" out, memorized c
+10292	2.9843	CANTABQuestionnaire	DMSStrategy	Remembered featuers that popped out, memorized c
 10292	3.9890	CANTABQuestionnaire	DMSDifficulty	Easy
 10292	3.9890	CANTABQuestionnaire	SOCStrategy	No
 10292	3.9890	CANTABQuestionnaire	DMSStrategy	No
@@ -12717,7 +12717,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10292	0.9035	CANTABQuestionnaire	SSPDifficulty	Medium
 10292	0.9035	CANTABQuestionnaire	SSPStrategy	Went over order in head pointed out pattern with f
 10292	0.9035	CANTABQuestionnaire	SOCDifficulty	Easy
-10292	0.9035	CANTABQuestionnaire	DMSStrategy	Remembered featuers that "popped" out, memorized c
+10292	0.9035	CANTABQuestionnaire	DMSStrategy	Remembered featuers that popped out, memorized c
 10292	1.9083	CANTABQuestionnaire	DMSDifficulty	Easy
 10292	1.9083	CANTABQuestionnaire	SOCStrategy	No
 10292	1.9083	CANTABQuestionnaire	DMSStrategy	No
@@ -12749,7 +12749,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10292	0.0000	CANTABQuestionnaire	SSPDifficulty	Medium
 10292	0.0000	CANTABQuestionnaire	SSPStrategy	Went over order in head pointed out pattern with f
 10292	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
-10292	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered featuers that "popped" out, memorized c
+10292	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered featuers that popped out, memorized c
 10292	1.0048	CANTABQuestionnaire	DMSDifficulty	Easy
 10292	1.0048	CANTABQuestionnaire	SOCStrategy	No
 10292	1.0048	CANTABQuestionnaire	DMSStrategy	No
@@ -12781,7 +12781,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10292	1.0048	CANTABQuestionnaire	SSPDifficulty	Medium
 10292	1.0048	CANTABQuestionnaire	SSPStrategy	Went over order in head pointed out pattern with f
 10292	1.0048	CANTABQuestionnaire	SOCDifficulty	Easy
-10292	1.0048	CANTABQuestionnaire	DMSStrategy	Remembered featuers that "popped" out, memorized c
+10292	1.0048	CANTABQuestionnaire	DMSStrategy	Remembered featuers that popped out, memorized c
 10292	0.0000	CANTABQuestionnaire	DMSDifficulty	Easy
 10292	0.0000	CANTABQuestionnaire	SOCStrategy	No
 10292	0.0000	CANTABQuestionnaire	DMSStrategy	No
@@ -13152,7 +13152,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10527	0.4353	CANTABQuestionnaire	SSPDifficulty	Easy
 10527	0.4353	CANTABQuestionnaire	DMSDifficulty	Medium
 10527	0.4353	CANTABQuestionnaire	SOCStrategy	No
-10527	1.4127	CANTABQuestionnaire	DMSStrategy	Said "checkers" to remember paterns
+10527	1.4127	CANTABQuestionnaire	DMSStrategy	Said checkers to remember paterns
 10527	1.4127	CANTABQuestionnaire	SOCDifficulty	Medium
 10527	1.4127	CANTABQuestionnaire	SSPStrategy	No
 10527	1.4127	CANTABQuestionnaire	SSPDifficulty	Medium
@@ -13180,7 +13180,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10527	0.0219	CANTABQuestionnaire	SSPDifficulty	Easy
 10527	0.0219	CANTABQuestionnaire	DMSDifficulty	Medium
 10527	0.0219	CANTABQuestionnaire	SOCStrategy	No
-10527	0.9993	CANTABQuestionnaire	DMSStrategy	Said "checkers" to remember paterns
+10527	0.9993	CANTABQuestionnaire	DMSStrategy	Said checkers to remember paterns
 10527	0.9993	CANTABQuestionnaire	SOCDifficulty	Medium
 10527	0.9993	CANTABQuestionnaire	SSPStrategy	No
 10527	0.9993	CANTABQuestionnaire	SSPDifficulty	Medium
@@ -13208,7 +13208,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10527	0.9774	CANTABQuestionnaire	SSPDifficulty	Easy
 10527	0.9774	CANTABQuestionnaire	DMSDifficulty	Medium
 10527	0.9774	CANTABQuestionnaire	SOCStrategy	No
-10527	0.0000	CANTABQuestionnaire	DMSStrategy	Said "checkers" to remember paterns
+10527	0.0000	CANTABQuestionnaire	DMSStrategy	Said checkers to remember paterns
 10527	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
 10527	0.0000	CANTABQuestionnaire	SSPStrategy	No
 10527	0.0000	CANTABQuestionnaire	SSPDifficulty	Medium
@@ -13236,7 +13236,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10527	1.9740	CANTABQuestionnaire	SSPDifficulty	Easy
 10527	1.9740	CANTABQuestionnaire	DMSDifficulty	Medium
 10527	1.9740	CANTABQuestionnaire	SOCStrategy	No
-10527	0.9966	CANTABQuestionnaire	DMSStrategy	Said "checkers" to remember paterns
+10527	0.9966	CANTABQuestionnaire	DMSStrategy	Said checkers to remember paterns
 10527	0.9966	CANTABQuestionnaire	SOCDifficulty	Medium
 10527	0.9966	CANTABQuestionnaire	SSPStrategy	No
 10527	0.9966	CANTABQuestionnaire	SSPDifficulty	Medium
@@ -16126,7 +16126,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10143	0.0000	CANTABQuestionnaire	DMSStrategy	Repeated how they looked in head
 10176	0.0000	WASI	wfull4	107
 10176	0.0000	WASI	wfull2	103
-10176	0.0000	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like "o" or "f
+10176	0.0000	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like o or f
 10176	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
 10176	0.0000	CANTABQuestionnaire	SSPStrategy	Followed w/eyes
 10176	0.0000	CANTABQuestionnaire	SSPDifficulty	Easy
@@ -16147,7 +16147,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10176	3.7618	CANTABQuestionnaire	DMSDifficulty	Easy
 10176	1.1964	WASI	wfull4	107
 10176	1.1964	WASI	wfull2	103
-10176	1.1964	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like "o" or "f
+10176	1.1964	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like o or f
 10176	1.1964	CANTABQuestionnaire	SOCDifficulty	Easy
 10176	1.1964	CANTABQuestionnaire	SSPStrategy	Followed w/eyes
 10176	1.1964	CANTABQuestionnaire	SSPDifficulty	Easy
@@ -16168,7 +16168,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10176	2.5654	CANTABQuestionnaire	DMSDifficulty	Easy
 10176	2.9733	WASI	wfull4	107
 10176	2.9733	WASI	wfull2	103
-10176	2.9733	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like "o" or "f
+10176	2.9733	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like o or f
 10176	2.9733	CANTABQuestionnaire	SOCDifficulty	Easy
 10176	2.9733	CANTABQuestionnaire	SSPStrategy	Followed w/eyes
 10176	2.9733	CANTABQuestionnaire	SSPDifficulty	Easy
@@ -16189,7 +16189,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10176	0.7885	CANTABQuestionnaire	DMSDifficulty	Easy
 10176	3.7618	WASI	wfull4	107
 10176	3.7618	WASI	wfull2	103
-10176	3.7618	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like "o" or "f
+10176	3.7618	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like o or f
 10176	3.7618	CANTABQuestionnaire	SOCDifficulty	Easy
 10176	3.7618	CANTABQuestionnaire	SSPStrategy	Followed w/eyes
 10176	3.7618	CANTABQuestionnaire	SSPDifficulty	Easy
@@ -16212,14 +16212,14 @@ lunaid	visitdiffyears	taskName	subsection	value
 10197	0.0000	WASI	wfull4	91
 10197	0.0000	CANTABQuestionnaire	SSPDifficulty	Hard
 10197	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
-10197	0.0000	CANTABQuestionnaire	SSPStrategy	"Connect the dots" to see patterns and which way t
+10197	0.0000	CANTABQuestionnaire	SSPStrategy	Connect the dots to see patterns and which way t
 10197	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered colors-said them out loud
 10197	0.0000	CANTABQuestionnaire	SOCStrategy	Tried to plan ahead
 10197	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10209	0.0000	WASI	wfull2	101
 10209	0.0000	WASI	wfull4	102
 10209	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
-10209	0.0000	CANTABQuestionnaire	DMSStrategy	Said colors-named them-"checked" etc.
+10209	0.0000	CANTABQuestionnaire	DMSStrategy	Said colors-named them-checked etc.
 10209	0.0000	CANTABQuestionnaire	SSPDifficulty	Easy
 10209	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
 10209	1.1307	CANTABQuestionnaire	DMSDifficulty	Medium
@@ -16246,7 +16246,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10209	1.1307	WASI	wfull2	101
 10209	1.1307	WASI	wfull4	102
 10209	1.1307	CANTABQuestionnaire	DMSDifficulty	Medium
-10209	1.1307	CANTABQuestionnaire	DMSStrategy	Said colors-named them-"checked" etc.
+10209	1.1307	CANTABQuestionnaire	DMSStrategy	Said colors-named them-checked etc.
 10209	1.1307	CANTABQuestionnaire	SSPDifficulty	Easy
 10209	1.1307	CANTABQuestionnaire	SOCDifficulty	Medium
 10209	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
@@ -16273,7 +16273,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10209	2.2231	WASI	wfull2	101
 10209	2.2231	WASI	wfull4	102
 10209	2.2231	CANTABQuestionnaire	DMSDifficulty	Medium
-10209	2.2231	CANTABQuestionnaire	DMSStrategy	Said colors-named them-"checked" etc.
+10209	2.2231	CANTABQuestionnaire	DMSStrategy	Said colors-named them-checked etc.
 10209	2.2231	CANTABQuestionnaire	SSPDifficulty	Easy
 10209	2.2231	CANTABQuestionnaire	SOCDifficulty	Medium
 10209	1.0924	CANTABQuestionnaire	DMSDifficulty	Medium
@@ -16300,7 +16300,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10209	3.1431	WASI	wfull2	101
 10209	3.1431	WASI	wfull4	102
 10209	3.1431	CANTABQuestionnaire	DMSDifficulty	Medium
-10209	3.1431	CANTABQuestionnaire	DMSStrategy	Said colors-named them-"checked" etc.
+10209	3.1431	CANTABQuestionnaire	DMSStrategy	Said colors-named them-checked etc.
 10209	3.1431	CANTABQuestionnaire	SSPDifficulty	Easy
 10209	3.1431	CANTABQuestionnaire	SOCDifficulty	Medium
 10209	2.0123	CANTABQuestionnaire	DMSDifficulty	Medium
@@ -16327,7 +16327,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10209	4.1068	WASI	wfull2	101
 10209	4.1068	WASI	wfull4	102
 10209	4.1068	CANTABQuestionnaire	DMSDifficulty	Medium
-10209	4.1068	CANTABQuestionnaire	DMSStrategy	Said colors-named them-"checked" etc.
+10209	4.1068	CANTABQuestionnaire	DMSStrategy	Said colors-named them-checked etc.
 10209	4.1068	CANTABQuestionnaire	SSPDifficulty	Easy
 10209	4.1068	CANTABQuestionnaire	SOCDifficulty	Medium
 10209	2.9760	CANTABQuestionnaire	DMSDifficulty	Medium
@@ -16754,7 +16754,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10365	0.9363	CANTABQuestionnaire	SSPDifficulty	Hard
 10365	0.9363	CANTABQuestionnaire	SSPStrategy	No
 10365	0.9363	CANTABQuestionnaire	SOCDifficulty	Medium
-10365	0.9363	CANTABQuestionnaire	DMSStrategy	Sqaures = "checkers" "four checkers; lines = "line
+10365	0.9363	CANTABQuestionnaire	DMSStrategy	Sqaures = checkers four checkers; lines = line
 10365	0.9363	CANTABQuestionnaire	DMSDifficulty	Medium
 10365	0.9363	CANTABQuestionnaire	SOCStrategy	No
 10365	2.0589	WASI	wfull4	126
@@ -16787,7 +16787,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10365	0.0000	CANTABQuestionnaire	SSPDifficulty	Hard
 10365	0.0000	CANTABQuestionnaire	SSPStrategy	No
 10365	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
-10365	0.0000	CANTABQuestionnaire	DMSStrategy	Sqaures = "checkers" "four checkers; lines = "line
+10365	0.0000	CANTABQuestionnaire	DMSStrategy	Sqaures = checkers four checkers; lines = line
 10365	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10365	0.0000	CANTABQuestionnaire	SOCStrategy	No
 10365	1.1225	WASI	wfull4	126
@@ -16820,7 +16820,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10365	1.1225	CANTABQuestionnaire	SSPDifficulty	Hard
 10365	1.1225	CANTABQuestionnaire	SSPStrategy	No
 10365	1.1225	CANTABQuestionnaire	SOCDifficulty	Medium
-10365	1.1225	CANTABQuestionnaire	DMSStrategy	Sqaures = "checkers" "four checkers; lines = "line
+10365	1.1225	CANTABQuestionnaire	DMSStrategy	Sqaures = checkers four checkers; lines = line
 10365	1.1225	CANTABQuestionnaire	DMSDifficulty	Medium
 10365	1.1225	CANTABQuestionnaire	SOCStrategy	No
 10365	0.0000	WASI	wfull4	126
@@ -16853,7 +16853,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10365	1.9685	CANTABQuestionnaire	SSPDifficulty	Hard
 10365	1.9685	CANTABQuestionnaire	SSPStrategy	No
 10365	1.9685	CANTABQuestionnaire	SOCDifficulty	Medium
-10365	1.9685	CANTABQuestionnaire	DMSStrategy	Sqaures = "checkers" "four checkers; lines = "line
+10365	1.9685	CANTABQuestionnaire	DMSStrategy	Sqaures = checkers four checkers; lines = line
 10365	1.9685	CANTABQuestionnaire	DMSDifficulty	Medium
 10365	1.9685	CANTABQuestionnaire	SOCStrategy	No
 10365	0.8460	WASI	wfull4	126
@@ -16886,7 +16886,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10365	3.1348	CANTABQuestionnaire	SSPDifficulty	Hard
 10365	3.1348	CANTABQuestionnaire	SSPStrategy	No
 10365	3.1348	CANTABQuestionnaire	SOCDifficulty	Medium
-10365	3.1348	CANTABQuestionnaire	DMSStrategy	Sqaures = "checkers" "four checkers; lines = "line
+10365	3.1348	CANTABQuestionnaire	DMSStrategy	Sqaures = checkers four checkers; lines = line
 10365	3.1348	CANTABQuestionnaire	DMSDifficulty	Medium
 10365	3.1348	CANTABQuestionnaire	SOCStrategy	No
 10365	2.0123	WASI	wfull4	126
@@ -17430,7 +17430,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10199	0.0000	CANTABQuestionnaire	SOCDifficulty	Medium
 10199	0.0000	CANTABQuestionnaire	SSPStrategy	Made patterns-left, right, middle, etc.
 10199	0.0000	CANTABQuestionnaire	SSPDifficulty	Hard
-10199	0.0000	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, "office build
+10199	0.0000	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, office build
 10199	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10199	0.0000	CANTABQuestionnaire	SOCStrategy	-
 10199	0.0000	WASI	wfull2	101
@@ -17459,7 +17459,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10199	6.6366	CANTABQuestionnaire	SOCDifficulty	Medium
 10199	6.6366	CANTABQuestionnaire	SSPStrategy	Made patterns-left, right, middle, etc.
 10199	6.6366	CANTABQuestionnaire	SSPDifficulty	Hard
-10199	6.6366	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, "office build
+10199	6.6366	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, office build
 10199	6.6366	CANTABQuestionnaire	DMSDifficulty	Medium
 10199	6.6366	CANTABQuestionnaire	SOCStrategy	-
 10199	6.6366	WASI	wfull2	101
@@ -17488,7 +17488,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10199	7.6468	CANTABQuestionnaire	SOCDifficulty	Medium
 10199	7.6468	CANTABQuestionnaire	SSPStrategy	Made patterns-left, right, middle, etc.
 10199	7.6468	CANTABQuestionnaire	SSPDifficulty	Hard
-10199	7.6468	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, "office build
+10199	7.6468	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, office build
 10199	7.6468	CANTABQuestionnaire	DMSDifficulty	Medium
 10199	7.6468	CANTABQuestionnaire	SOCStrategy	-
 10199	7.6468	WASI	wfull2	101
@@ -17517,7 +17517,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10199	8.6790	CANTABQuestionnaire	SOCDifficulty	Medium
 10199	8.6790	CANTABQuestionnaire	SSPStrategy	Made patterns-left, right, middle, etc.
 10199	8.6790	CANTABQuestionnaire	SSPDifficulty	Hard
-10199	8.6790	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, "office build
+10199	8.6790	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, office build
 10199	8.6790	CANTABQuestionnaire	DMSDifficulty	Medium
 10199	8.6790	CANTABQuestionnaire	SOCStrategy	-
 10199	8.6790	WASI	wfull2	101
@@ -18535,7 +18535,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10330	5.8645	CANTABQuestionnaire	SOCStrategy	No
 10330	5.8645	CANTABQuestionnaire	DMSStrategy	Remember colors in order and remember 2 most obvio
 10330	5.8645	CANTABQuestionnaire	SSPDifficulty	Medium
-10330	5.8645	CANTABQuestionnaire	SSPStrategy	build a "map", for the harder ones, draw pictures 
+10330	5.8645	CANTABQuestionnaire	SSPStrategy	build a map, for the harder ones, draw pictures 
 10330	5.8645	CANTABQuestionnaire	SOCDifficulty	Easy
 10330	5.8645	WASI	wfull2	129
 10330	5.8645	WASI	wfull4	134
@@ -18548,7 +18548,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10330	0.0000	CANTABQuestionnaire	SOCStrategy	No
 10330	0.0000	CANTABQuestionnaire	DMSStrategy	Remember colors in order and remember 2 most obvio
 10330	0.0000	CANTABQuestionnaire	SSPDifficulty	Medium
-10330	0.0000	CANTABQuestionnaire	SSPStrategy	build a "map", for the harder ones, draw pictures 
+10330	0.0000	CANTABQuestionnaire	SSPStrategy	build a map, for the harder ones, draw pictures 
 10330	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
 10330	0.0000	WASI	wfull2	129
 10330	0.0000	WASI	wfull4	134
@@ -20622,7 +20622,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10174	2.9979	CANTABQuestionnaire	SSPDifficulty	Hard
 10174	2.9979	CANTABQuestionnaire	SOCDifficulty	Hard
 10174	2.9979	CANTABQuestionnaire	SSPStrategy	Followed and retraced path
-10174	2.9979	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid "cheese" ->not 
+10174	2.9979	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid cheese ->not 
 10174	2.9979	CANTABQuestionnaire	SOCStrategy	Nothing
 10174	2.9979	CANTABQuestionnaire	DMSDifficulty	Medium
 10174	4.0055	CANTABQuestionnaire	DMSStrategy	Yes, remembered order of the colors
@@ -20660,7 +20660,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10174	1.9795	CANTABQuestionnaire	SSPDifficulty	Hard
 10174	1.9795	CANTABQuestionnaire	SOCDifficulty	Hard
 10174	1.9795	CANTABQuestionnaire	SSPStrategy	Followed and retraced path
-10174	1.9795	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid "cheese" ->not 
+10174	1.9795	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid cheese ->not 
 10174	1.9795	CANTABQuestionnaire	SOCStrategy	Nothing
 10174	1.9795	CANTABQuestionnaire	DMSDifficulty	Medium
 10174	2.9870	CANTABQuestionnaire	DMSStrategy	Yes, remembered order of the colors
@@ -20698,7 +20698,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10174	0.0000	CANTABQuestionnaire	SSPDifficulty	Hard
 10174	0.0000	CANTABQuestionnaire	SOCDifficulty	Hard
 10174	0.0000	CANTABQuestionnaire	SSPStrategy	Followed and retraced path
-10174	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid "cheese" ->not 
+10174	0.0000	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid cheese ->not 
 10174	0.0000	CANTABQuestionnaire	SOCStrategy	Nothing
 10174	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
 10174	1.0075	CANTABQuestionnaire	DMSStrategy	Yes, remembered order of the colors
@@ -20736,7 +20736,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10174	1.0075	CANTABQuestionnaire	SSPDifficulty	Hard
 10174	1.0075	CANTABQuestionnaire	SOCDifficulty	Hard
 10174	1.0075	CANTABQuestionnaire	SSPStrategy	Followed and retraced path
-10174	1.0075	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid "cheese" ->not 
+10174	1.0075	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid cheese ->not 
 10174	1.0075	CANTABQuestionnaire	SOCStrategy	Nothing
 10174	1.0075	CANTABQuestionnaire	DMSDifficulty	Medium
 10174	0.0000	CANTABQuestionnaire	DMSStrategy	Yes, remembered order of the colors
@@ -20774,7 +20774,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10174	4.1314	CANTABQuestionnaire	SSPDifficulty	Hard
 10174	4.1314	CANTABQuestionnaire	SOCDifficulty	Hard
 10174	4.1314	CANTABQuestionnaire	SSPStrategy	Followed and retraced path
-10174	4.1314	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid "cheese" ->not 
+10174	4.1314	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid cheese ->not 
 10174	4.1314	CANTABQuestionnaire	SOCStrategy	Nothing
 10174	4.1314	CANTABQuestionnaire	DMSDifficulty	Medium
 10174	3.1239	CANTABQuestionnaire	DMSStrategy	Yes, remembered order of the colors
@@ -20812,7 +20812,7 @@ lunaid	visitdiffyears	taskName	subsection	value
 10174	5.3607	CANTABQuestionnaire	SSPDifficulty	Hard
 10174	5.3607	CANTABQuestionnaire	SOCDifficulty	Hard
 10174	5.3607	CANTABQuestionnaire	SSPStrategy	Followed and retraced path
-10174	5.3607	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid "cheese" ->not 
+10174	5.3607	CANTABQuestionnaire	DMSStrategy	Remembered color and whether solid cheese ->not 
 10174	5.3607	CANTABQuestionnaire	SOCStrategy	Nothing
 10174	5.3607	CANTABQuestionnaire	DMSDifficulty	Medium
 10174	4.3532	CANTABQuestionnaire	DMSStrategy	Yes, remembered order of the colors

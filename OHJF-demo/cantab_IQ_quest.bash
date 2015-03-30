@@ -9,7 +9,12 @@ sql "$dbi" \
 "
 create temporary table cantabvisit (luna varchar(10), visitdate date);
 load data local infile 'luna_date.txt' into table cantabvisit Fields TERMINATED BY ' ';
-select p.value as lunaid, abs(datediff(v.visitdate,cv.visitdate)/365.25) as visitdiffyears, vt.taskName,vt.subsection, vt.value
+select 
+   p.value as lunaid,
+   abs(datediff(v.visitdate,cv.visitdate)/365.25) as visitdiffyears,
+   vt.taskName,
+   vt.subsection, 
+   replace(replace(vt.value, '\n',';'),'\"','') as value
       from cantabvisit as cv
       join peopleEnroll p
        on p.value=cv.luna
