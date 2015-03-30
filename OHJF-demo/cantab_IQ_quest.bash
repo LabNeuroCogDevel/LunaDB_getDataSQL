@@ -23,11 +23,6 @@ select p.value as lunaid, abs(datediff(v.visitdate,cv.visitdate)/365.25) as visi
                   'SSPDifficulty' ,'SSPStrategy',
                   'SOCDifficulty','SOCStrategy',
                   'wfull2','wfull4','wvoc','wperf')
-" | tee allQuest_WASI_forCANTAB.txt 
+" > allQuest_WASI_forCANTAB.txt 
 
-Rio -d"\t" 'df %>%
- group_by(lunaid,taskName,subsection) %>% 
- filter(rank(visitdiffyears,ties.method="first")==1) %>%
- unite(ts,taskName,subsection) %>%
- select(-visitdiffyears) %>%
- spread(ts,value)' < allQuest_WASI_forCANTAB.txt > closestsToCANTAB.txt
+Rio -d"\t" -r -e 'df %>% group_by(lunaid,taskName,subsection) %>%  filter(rank(visitdiffyears,ties.method="first")==1) %>% unite(ts,taskName,subsection) %>% select(-visitdiffyears) %>% spread(ts,value)' < allQuest_WASI_forCANTAB.txt > closestsToCANTAB.csv

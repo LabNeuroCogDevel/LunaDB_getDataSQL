@@ -1,0 +1,246 @@
+"lunaid","CANTABQuestionnaire_DMSDifficulty","CANTABQuestionnaire_DMSStrategy","CANTABQuestionnaire_SOCDifficulty","CANTABQuestionnaire_SOCStrategy","CANTABQuestionnaire_SSPDifficulty","CANTABQuestionnaire_SSPStrategy","WASI_wfull2","WASI_wfull4"
+10123,"Medium","Colors & Checkers","Easy","No","Medium","Count them","105","110"
+10124,"Medium","Tried to remember the top left one","Easy","No","Hard","Would keep following the boxes with eyes until it ","116","111"
+10125,"Easy","No","Easy","No","Easy","Followed pattern with eyes","109","111"
+10128,"Easy","Gave them names","Easy","No","Hard","Tried to assign #1 to boxes in head","117","118"
+10129,"Easy","Said pattern out loud","Easy","Talked out loud to solve 'copy' part","Hard","Used eyes to follow the pattern","107","97"
+10130,"Easy","Top left color","Easy","No","Easy","Followed with eyes","109","100"
+10132,"Medium","No","Medium","Make the moves mentally first to see if it works","Hard","No","115","114"
+10133,"Medium","Kept repeating colors in head","Medium","No","Hard","No","108","117"
+10134,"Medium","Remembered colors and then certain characteristics","Medium","Visualized pattern before-hand","Hard","Tried to divide screen into regions & repeat the p","131","134"
+10136,"Medium","Looked at bottom two boxes of pattern","Easy","Not really","Hard","No","102","106"
+10138,"Easy","Remember the order of the colors","Easy","Just watched it","Medium","Numbered the blocks","106","99"
+10140,"Medium","Remembered colors and shapes","Easy","No","Hard","Every time new number would count until hit target","111","115"
+10141,"Medium","Remembered colors instead of pattern","Easy","No","Medium","No","112","113"
+10142,"Medium","Compared patterns to what they looked like and rep","Medium","No","Hard","Saw patterns - i.e. mickey mouse ears","90","97"
+10143,"Medium","Remembered the colors","Easy","No","Hard","Traced patterns in air repeatedly, see if there wa","103","102"
+10145,"Medium","Remembered the colors","Easy","Visualized in mind","Medium","Made paths with the block","116","118"
+10146,"Medium","Remembered the colors","Easy","No","Hard","No","117","109"
+10147,"Easy","Remembered the colors and if they were checkered o","Medium","No","Medium","Traced with imaginary line","104","99"
+10148,"Medium","Remember the colors and any dinstinctive marks","Medium","Planned out how to do it in head","Hard","Keep going through and assigned numbers to the lig","121","127"
+10149,"Medium","Colors and Specific Patterns",NA,NA,"Hard","Going over sequence pathway with finger","122","120"
+10150,"Easy","No","Easy","No","Medium","No","121","116"
+10151,"Medium","Said colors to self and tried to remember gaps","Medium",NA,"Medium-Hard","Used numbers","109","107"
+10152,"Medium","Remember order of colors and associated patters w/","Easy","Visualize how to do it-find a plan","Easy","Pointed to boxes in order over and over again","117","126"
+10153,"Hard","Say the colors out loud and stared at square","Easy-follow, Medium-copy","Not really","Hard","Pointed to them repeatedly","124","126"
+10155,"Medium","Remembered colors","Easy",NA,"Medium","After changed color followed with eyes","111","108"
+10156,"Medium","Said color over and over named pattern","Easy","Did in mind first","Hard","Lookign at what it formed, connected the dots","115","112"
+10157,"Easy-Medium","Colors; visually remembered","Easy","No","Medium","Would say straight across, up, down, etc.","91","95"
+10160,"Medium","Remembered colored and shapes","Medium","Thought Before Moved","Hard (towards the end)","Repeated","99","91"
+10161,"Medium","Remembered colors","Medium-Hard","No","Medium","No","112","117"
+10162,"Easy-Medium","Colors and patterns","Easy","Did it in head then did it on comp.","Medium","Repeating pattern in head","109","117"
+10163,"Medium","Colors and pattern with pattern","Medium","Not too much","Hard","Letters to shapes","104","109"
+10167,"Easy","Colors and named pattersn like steps, checks, wind","Easy","No","Easy","Used finger to follow pattern","112","110"
+10168,"Easy","Colors and patterns","Easy","Did in head first","Hard-at end","Counted","104","103"
+10169,"Easy","Repeated color pattern over and over","Easy","No","Hard-at end","Followed the order with eyes before touching","106","109"
+10170,"Medium","Repeated colors or shape","Medium",NA,"Medium-Hard","Follow w/eyes","91","95"
+10172,"Medium","Patter w/in pattern",NA,NA,"Medium",NA,"113","117"
+10173,"Easy","Colors","Medium","No","Hard-at end","Follow w/eyes (didn't work very well)","106","114"
+10174,"Easy","Colors, repeated in head","Easy","Nothing","Hard-at end","Followed w/eyes","109","115"
+10175,"Medium","Colors","Easy","No","Hard-at end","Kept going over seq. w/eyes","102","109"
+10176,"Easy","Colors and shapes-gave shapes names like o or f
+10176	0.0000	CANTABQuestionnaire	SOCDifficulty	Easy
+10176	0.0000	CANTABQuestionnaire	SSPStrategy	Followed w/eyes
+10176	0.0000	CANTABQuestionnaire	SSPDifficulty	Easy
+10176	0.0000	CANTABQuestionnaire	DMSDifficulty	Easy
+10176	1.1964	CANTABQuestionnaire	DMSDifficulty	Easy
+10176	1.1964	CANTABQuestionnaire	SSPDifficulty	Easy
+10176	1.1964	CANTABQuestionnaire	SOCDifficulty	Easy
+10176	2.9733	CANTABQuestionnaire	DMSDifficulty	Easy
+10176	2.9733	CANTABQuestionnaire	SOCDifficulty	Easy
+10176	2.9733	CANTABQuestionnaire	SSPStrategy	Only made it to 7 boxes
+10176	2.9733	CANTABQuestionnaire	SSPDifficulty	Easy
+10176	3.7618	WASI	wfull4	127
+10176	3.7618	WASI	wfull2	129
+10176	3.7618	CANTABQuestionnaire	SSPStrategy	Fingers on table
+10176	3.7618	CANTABQuestionnaire	SOCDifficulty	Easy
+10176	3.7618	CANTABQuestionnaire	SSPDifficulty	Medium
+10176	3.7618	CANTABQuestionnaire	SOCStrategy	No
+10176	3.7618	CANTABQuestionnaire	DMSDifficulty	Easy
+10176	1.1964	WASI	wfull4	107
+10176	1.1964	WASI	wfull2	103
+10176	1.1964	CANTABQuestionnaire	DMSStrategy	Colors and shapes-gave shapes names like o or f","Easy","No","Easy","Fingers on table","103","107"
+10177,"Easy-Medium","Colors","Easy-Medium","Mapped out number of moves before doing in on comp","Medium","No","113","123"
+10178,"Easy-Medium","Colors","Medium","No","Hard-end","Follow the path","111","117"
+10179,"Easy","Mouth color pattern and description (ex: outline, ","Easy","Not really","Easy","Remembered finger pattern","114","123"
+10180,"Easy","Remembered colors and distinctive shapes","Easy-Medium","Anticipating the moves","Hard","Tried to form shapes/pattern to simplify","128","127"
+10181,"Medium","Remembered colors","Easy","No","Hard","Associated shapes the sequences made","90","100"
+10183,"Medium","Remembered color and pattern","Easy","Not really","Medium","Motioning w/hand above screen","95","99"
+10184,"Easy-Medium","Looked at colors and shapes","Easy","No","Easy","Motioned w/finger","87","98"
+10185,"Medium","Memorized colors and remembered 1 or 2 of the patt","Easy","No","Hard","Not really","112","107"
+10186,"Easy","Patterns within patterns, colors","Easy ","Plan before hand","Medium","Memorize in sets usually a pattern between","123","124"
+10187,"Medium","Memorized colors and tried to associate patterns w","Medium","No","Hard","Pointed to them in the air repeatedly","108","110"
+10188,"Medium","Memorized colors","Medium","Sometimes planned ahead","Hard","Motioned w/finger on table in front of her","108","109"
+10189,"Medium","Focused on left colors and right patterns","Easy","No","Hard","Map out, connect the dot pattern","103","108"
+10190,"Medium","Though about them-colors","Easy","No","Medium","Counted them","98","101"
+10191,"Medium","Picked 2 blocks and memorized the shape","Easy","Planned before moving them",NA,"Motioning w/fingers-pattern of squares, counted ou","127","134"
+10192,"Medium","Memorized one shape and colors","Easy","Similar to a game on his calculator","Hard-at end","Repeated ","96","105"
+10194,"Medium","Stared behind it","Easy","Just did it","Medium","Replay order","101","104"
+10195,"Medium","Looked at 1 block and remembered the pattern","Easy","Planned moves before doing them","Medium","No","95","100"
+10196,"Hard","Said every color","Easy",NA,"Hard","Said numbers and looked at boxes over and over aga","91","85"
+10197,"Medium","Remembered colors-said them out loud","Medium","Tried to plan ahead","Hard","Connect the dots to see patterns and which way t","96","91"
+10198,"Easy-Medium","Making designs in mind to remember pattern-giving ","Easy",NA,"Medium","Envisioned screen in head","114","111"
+10199,"Medium","Memorized color patterns and shapes, office build
+10199	0.0000	CANTABQuestionnaire	DMSDifficulty	Medium
+10199	0.0000	CANTABQuestionnaire	SOCStrategy	-
+10199	0.0000	WASI	wfull2	101
+10199	0.0000	WASI	wfull4	103
+10199	6.6366	CANTABQuestionnaire	DMSStrategy	Associate what the pattern looked like
+10199	6.6366	CANTABQuestionnaire	SSPStrategy	map-follow with my eyes. 9 squares were harder
+10199	6.6366	CANTABQuestionnaire	SOCDifficulty	Easy
+10199	6.6366	CANTABQuestionnaire	SSPDifficulty	Hard
+10199	6.6366	CANTABQuestionnaire	DMSDifficulty	Medium
+10199	6.6366	CANTABQuestionnaire	SOCStrategy	Not really
+10199	6.6366	WASI	wfull2	119
+10199	6.6366	WASI	wfull4	124
+10199	7.6468	CANTABQuestionnaire	SSPDifficulty	Easy
+10199	7.6468	CANTABQuestionnaire	SOCDifficulty	Easy
+10199	7.6468	CANTABQuestionnaire	DMSStrategy	associate what they look like to men w/ beards or 
+10199	7.6468	CANTABQuestionnaire	DMSDifficulty	Easy
+10199	7.6468	CANTABQuestionnaire	SOCStrategy	n/a
+10199	8.6790	CANTABQuestionnaire	SOCStrategy	no
+10199	8.6790	CANTABQuestionnaire	DMSDifficulty	Easy
+10199	8.6790	CANTABQuestionnaire	DMSStrategy	think of colors/shapes
+10199	8.6790	CANTABQuestionnaire	SSPDifficulty	Easy
+10199	8.6790	CANTABQuestionnaire	SOCDifficulty	Easy
+10199	8.6790	CANTABQuestionnaire	SSPStrategy	tried to copy pattern with fingers
+10199	8.6790	WASI	wfull2	126
+10199	8.6790	WASI	wfull4	127
+10199	6.6366	CANTABQuestionnaire	SOCDifficulty	Medium
+10199	6.6366	CANTABQuestionnaire	SSPStrategy	Made patterns-left, right, middle, etc.
+10199	6.6366	CANTABQuestionnaire	SSPDifficulty	Hard
+10199	6.6366	CANTABQuestionnaire	DMSStrategy	Memorized color patterns and shapes, office build","Medium","Not really","Hard","Made patterns-left, right, middle, etc.","119","124"
+10200,"Medium","Two boxes colors and design","Medium","Just Copy","Hard","1st describe location 2nd remember them","90","98"
+10201,"Easy","Remembered colors and shapes","Easy","No","Medium","Went through pattern over and over","111","120"
+10202,"Medium","Remembered colors and sometimes certain shapes if ","Easy","Sometimes thought through-planned","Hard","Moving eyes repeatedly to blocks","118","109"
+10204,"Medium","Remembered where colors were","Easy","No","Hard-toward end","Top, left, right, etc. named direction","120","122"
+10206,"Medium","Said colors and associated shapes checkerboard","Easy","No just moved them","Hard","No","118","112"
+10207,"Medium","Remembered colors","Easy",NA,"Hard","Made internal song-repeated","105","111"
+10208,"Easy","Repeated order of colors in head","Easy",NA,"Hard","Like a roller coaster from 1 place to another-foll","106","112"
+10209,"Medium","Said colors-named them-checked etc.","Medium","copy","Easy","Pretend there was a line connecting them","101","102"
+10210,"Medium","Looked at op block and remembered pattern in it","Easy","No","Hard","No","106","103"
+10211,"Easy","Looked for letters, kept saying pattern (e.g. chec","Easy",NA,"Hard","Traced lines to boxes","97","97"
+10214,"Medium","Tried to remember 1 color-named patterns to rememb","Easy",NA,"Hard","Numbered boxes","102","101"
+10215,"Medium","Picture things that seem familiar","Easy","No","Hard","Repeated pattern in head","99","106"
+10216,"Medium","Said colors sometimes remembered shape of pattern","Easy","Nothing","Hard","Went back and repeated pattern each time","100","115"
+10217,"Medium","Assoc w/real obj found something that was differen","Medium","Copy patterns","Hard","Just guessed","110","107"
+10218,"Medium","Looked at squares, same 2 each trial","Easy","No","Hard","Memorize but kept adding more","131","119"
+10220,"Medium","Said colors out loud","Medium","No","Medium","Used fingers","104","94"
+10221,"Medium","Remembered colors","Easy","No","Hard","Used fingers to point to where they were","98","93"
+10222,"Easy","Said colors over in head","Medium",NA,"Hard","Tried to trace them","99","103"
+10223,"Medium","Remembered colors","Hard","No","Easy","Followed them with his finger","105","109"
+10226,"Easy","Looked for square easily remembered","Medium","No","Hard","Pointed to boxes w/fingers","118","124"
+10229,"Easy","No","Easy","No","Medium","No","127","130"
+10230,"Easy","Just looked at them (patterns)","Medium","No","Medium-Hard","No","110","114"
+10235,"Medium","Colors or checkers","Easy","Tried to solve prob in head before moving dots","Hard-at end","Followed pattern w/eyes over and over","110","116"
+10236,"Easy","Gave indiv. shapes in pattern names like swiss che","Easy","No, just thought ahead","Medium-at end","Followed with eyes","99","105"
+10241,"Easy","Colors and shapes","Easy","No","Medium","Followed pattern with eyes as went on","99","104"
+10245,"Medium","Rememered colors and if a pattern was special-line","Medium","No","Hard","Tracing patterns w/fingers over and over","116","111"
+10246,"Medium","Repeated colors","Medium","No","Hard-toward end","Tried to number boxes","112","109"
+10248,"Medium","Remembered colors in head","Easy","No","Hard","Tried to remember it in lines","99","107"
+10252,"Medium","Remembered the way they looked checked, full","Easy","No","Hard","No","87","87"
+10253,"Medium","Focused on the colors","Medium","Did correctly","Hard","Went through all each time a new one lit up","104","100"
+10255,"Hard","Imagining numbers on figure","Medium","Just did it","Hard","Imagining numbers on figures","86",NA
+10256,"Easy","Colors and where they were, what shapes were in th","Easy","No","Medium","Pointing to boxes in order each time the new box l","101","105"
+10260,"Easy","Colors and shapes in patterns","Easy","No","Medium","Followed with eyes then touched boxes, easy at fir","106","108"
+10261,"Easy","Colors","Easy","No","Easy","No","102","108"
+10263,"Easy","Remembered colors","Easy","No","Hard","Retraced through all when new one lit up","118","113"
+10264,"Medium","How many spaces missing","Easy",NA,"Hard","Tried to point","85","85"
+10269,"Easy","Colors","Easy",NA,"Hard",NA,"98","103"
+10273,"Medium","Remembered colors and smiley faces","Easy","No","Hard","Repeated in head every time","103","103"
+10278,"Medium","Patterns-compared to shapes, letters, etc; remembe","Easy",NA,"Hard",NA,"108","106"
+10279,"Easy","Memorized colors, then big space","Easy","No","Medium","just repeated the pattern","112","116"
+10280,"Medium","Said it over and over in head","Easy",NA,"Easy","Sometimes repeated over and over","104","105"
+10281,"Hard","Colors, shapes","Easy",NA,"Hard","Tried to use fingers","98","103"
+10288,"Medium","Found something noticeable","Easy","If one was supposed to be at bottom moved to farth","Hard","Remembered in pairs, repitition","114","114"
+10292,"Medium","Repeated them over and over","Easy","Concentrated","Hard","Pointing to boxes with fingers","93","101"
+10297,"Easy","Make them into images","Easy",NA,"Hard","Repitition","120","120"
+10298,"Easy/Medium","Repeated and salient features","Medium","No","Medium/Hard","Repeated order in head","102","109"
+10299,"Easy",NA,"Easy",NA,"Medium",NA,"102","109"
+10300,"Easy","Remembered colors","Easy","No","Easy","Followed with finger then touched pattern","99","103"
+10305,"Medium","Colors, motions with fingers depending on pattern","Medium","No","Easy","Numbered boxes, kept repeating","108","105"
+10306,"Easy","Memorized colors","Easy",NA,"Medium",NA,"107","115"
+10307,"Easy","Colors","Easy","No","Medium","No","117","117"
+10311,"Easy","No","Medium","No","Medium","Went over the pattern","107","104"
+10312,"Medium","-","Medium","No","Hard","Repeat in head order of squares","111","107"
+10315,"Easy","Colors clockwise","Easy","No","Medium","No","113","111"
+10316,"Easy","Colors","Easy","No","Medium","Just used memory","96","97"
+10318,"Medium",NA,"Easy",NA,"Medium",NA,"114","123"
+10323,"Medium",NA,"Medium",NA,"Hard",NA,"130","118"
+10329,"Medium","Remembered colors clockwise order, then remembered","Easy","No","Medium-Hard","Drew lines to connect the boxes in mind","108","118"
+10330,"Easy","Remember colors in order and remember 2 most obvio","Easy","No","Hard","build a map, for the harder ones, draw pictures ","132","131"
+10331,"Medium",NA,"Medium",NA,"Hard",NA,NA,"119"
+10333,"Easy","Remembered 1 color and recognizable shape (2 color","Easy","No","Easy then Hard","Tried different strategies but nothing helped. Fol","100","112"
+10335,"Medium","Named patterns in patterns","Easy","No","Hard","Held fingers up where they went","103","106"
+10336,"Medium","Rembered the order of the colors in pattern","Easy","No","Hard","Go over each one as it came up and repeat adding n","99","104"
+10338,"Medium",NA,"Medium",NA,"Easy",NA,"104","100"
+10339,"Medium",NA,"Easy",NA,"Medium",NA,"96","102"
+10343,"Easy","Remembered colors","Easy","No","Hard","No, kept looking at them","109","112"
+10344,"Medium","Memorized the colors and pattern","Easy","No","Medium","Followed them and tapped on table to remember","99","101"
+10345,"Hard","Saw word in one pattern; colors remembered","Easy","No","Medium","1st half then 2nd half","88","101"
+10346,"Medium",NA,"Easy",NA,"Hard",NA,"78","77"
+10348,"Easy-others, Hard-long delay",NA,"Medium","Took a really long time on this section","Medium","Stopped very early","114","111"
+10350,"Medium",NA,"Medium",NA,"Hard",NA,"102","108"
+10351,"Medium","Remembered the colors","Easy","No","Medium","Rememberd used brain","126","131"
+10352,"Easy","Talked aloud about the colors","Easy","No","Medium","No","119","119"
+10353,"Medium",NA,"Easy",NA,"Medium",NA,"111","105"
+10354,"Medium",NA,"Easy",NA,"Hard",NA,"112","115"
+10357,"Medium",NA,"Easy",NA,"Medium",NA,"107","94"
+10358,"Easy","Just memorized","Easy","No","Hard","No","121","124"
+10359,"Medium","Remembered colors and repeat pattern  of 1","Medium","Always looked at what was on the bottom of stacks ","Hard","Retrace previous steps in her head","122","126"
+10360,"Medium","Made symbols","Easy","No","Hard","No","121","127"
+10361,"Medium","Came up with names for different patterns","Easy","No","Hard","Top, bottom, middle, etc.","122","123"
+10362,NA,NA,"Medium",NA,"Hard",NA,"104","106"
+10363,"Medium",NA,"Easy",NA,"Medium",NA,"113",NA
+10365,"Medium","Sqaures = checkers four checkers; lines = line","Medium","No","Hard","No","127","123"
+10366,"Medium",NA,"Easy",NA,"Easy",NA,"88","86"
+10368,"Easy","Said them aloud","Easy","Take time","Medium","Point and remember","103","105"
+10370,"Medium","No","Medium","No","Hard","No","104","105"
+10385,"Medium","Colors!","Easy","No","Medium","Looked at them and numbered them","115","118"
+10406,"Medium","Picked one side to remember","Easy","No","Easy","Pointed out with finger","118","119"
+10408,"Easy","No","Medium","No","Medium","No","113","110"
+10409,"Easy","Though of stuff the pattern looked like","Easy ","No","Medium","Numbered the blocks","124","119"
+10434,NA,NA,NA,NA,NA,NA,"127",NA
+10435,"Medium",NA,"Medium",NA,"Medium",NA,"129","112"
+10451,"Easy","Look at colors","Easy","Nothing","Hard","Nothing","120","120"
+10463,"Medium","Look at top and bottom and color and type of look ","Medium","No","Hard","Select when in group beginning=in middle of two","117","111"
+10466,"Easy","Saying it in his mind","Easy","Nope","Medium","Doesn't remember what he did","104","100"
+10470,"Medium","Colors","Medium","No","Medium","No","81","81"
+10472,"Hard","No","Medium","Memorized/watched the colors","Hard","Make shapes out of them","110","109"
+10476,"Medium","Colors top clockwise","Easy","No","Hard","Top=9, Bottom=1","111","107"
+10477,"Medium","Memorized color order","Medium","No","Hard","No","113","116"
+10479,"Easy","Remembered order of colors","Easy","No","Medium","Not really","101","109"
+10480,"Medium","Looked at certain letters inside shapes","Easy","No","Medium","No","97","103"
+10483,"Medium","Counted and thought about appearance of design","Easy","No","Medium","Made shape out of them","126","127"
+10485,"Medium","Colors in head and remembered","Easy","No","Easy","No","117","108"
+10486,"Easy","Repeated in head","Easy","Looked at ones on top and tried couple ways to get","Easy","Memorized and kept looking till gone","99","100"
+10488,"Easy","Memorized checkered and color and location on patt","Easy","No","Medium","Made design","101","95"
+10489,"Medium","Give all the things a name verbally, repeated patt","Easy","No","Medium","Gave empty box a # and remembered pattern of #'s","116","123"
+10492,"Medium","See letters in pattern","Medium"," No","Medium","Shapes of check mark","99","101"
+10500,"Easy","No","Easy","No","Medium","Followed with eyes","93","89"
+10501,"Medium","Colors","Easy","No","Hard","Numbered out loud","78","83"
+10527,"Medium","No","Medium","No","Medium","Pointed","120","102"
+10529,"Medium","No","Easy","No","Medium","No","106","108"
+10530,"Easy","Memorized colors","Medium","No","Medium","No","104","107"
+10542,"Easy","Said colors","Easy","No","Easy","No","124","122"
+10584,NA,NA,NA,NA,NA,NA,"128",NA
+10699,"Medium","Remembered the colors & picked one of the block pa","Medium","No","Hard","Repeated pattern after the boxes changed color","106","113"
+10816,"Medium","Assigned colors to his friends and remembered the ","Easy","Not really","Medium","Grouped in sets of 2 squres and remembered those","114","127"
+10895,"Easy","Remember colors & shapes","Easy","No","Medium","Practice in head","125","123"
+10927,"Easy","figure/remember 2 of them","Easy","No","Hard","repeat pattern as goes through","118","118"
+11052,"Easy","remember colors in order top to bottom","Medium","no","Medium","count them","117","123"
+11054,"Easy","remember the colors","Easy ","no","Medium","tried to remember","91","98"
+11060,"Easy","REmember color, 1st shape of top left and last shp","Easy","No","Medium","No","95","98"
+11072,"Easy","changed each time color and shape","Easy","n/a","Medium ","none","123","123"
+11088,"Medium","remembered by word association","Easy","no","Hard","dots as a face","113","114"
+11090,"Medium","remember colors in order and try to remember shape","Easy"," moving them to get them out of the way if needed","Hard","rehearse and repeat as go","121","121"
+11111,"Medium","remember the colors","Easy","No","Hard","use #'s and count them","101","100"
+11116,"Easy","2 answers - color scheme","Easy","No","Hard","not really, no pattern","130","133"
+11143,"Medium","remember the 4 colors and 2 patterns","Easy","no","Medium","think about shapes they were making","121","121"
+11151,"Medium","Yes. I would repeat colors in order + remember sha","Medium","Just follow","Hard","Fingers to count","125","125"
+11174,NA,NA,NA,NA,NA,NA,"130","129"
+11183,"Easy","memorize colors, sometimes shapes, & keep saying i","Easy",NA,"Hard","numbered the blocks/squares","124","125"
+11203,"Medium","start with lower left","Easy","no","Hard","follow red","108","105"
+11214,"Easy","Remembering colors: Pitt colors & favorite colors,","Easy","No","Medium","Just tried to remember path","120","125"
+11216,"Medium","Yes. Color and shape in 3rd cell","Easy","no","Hard","Yes. Making lines to connect the","109","111"
+11217,"Medium","Remember order of colors","Medium","No","Hard","No","105","114"
