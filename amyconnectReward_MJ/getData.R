@@ -18,7 +18,7 @@ select pe.value as LunaID,DOB, age as surveyage, taskName, subsection, vt.value
    pe.enrollType like 'LunaID' and
    (
      subsection in (
-      'wfull2', 
+      'wfull2', 'wfull4',
       'bdiTOTAL',
       'Tanner1hair','Tanner2TSP_orBreast','pps1to5', 
       'sssTOT', 'sssDIS','sssBS','sssTOT','sssES','sssTAS',
