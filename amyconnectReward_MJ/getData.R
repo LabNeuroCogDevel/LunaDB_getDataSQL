@@ -16,16 +16,19 @@ select pe.value as LunaID,DOB, age as surveyage, taskName, subsection, vt.value
  join people as p on pe.peopleid=p.peopleid
  where
    pe.enrollType like 'LunaID' and
-   subsection in (
-    'wfull2', 
-    'bdiTOTAL',
-    'Tanner1hair','Tanner2TSP_orBreast','pps1to5', 
-    'sssTOT', 'sssDIS','sssBS','sssTOT','sssES','sssTAS',
-    'cbclTAffProb', 'cbclTInternal', 'cbclTWithDep', 'cbclTAnxProb', 'cbclTAnxDep',
-    'cdiTOTAL', 'cdiT', 'cdiB', 'cdiA', 'cdiE', 'cdiC', 'cdiD', 
-    'ysrTAnxDep', 'ysrTInternal', 'ysrTWithDep', 'ysrTThoProb','ysrTAffProb',   'ysrTAnxProb',
-    'asrTAnxProb','asrTInternal', 'asrTAnxDep',  'asrTThoProb','asrTWithdrawn'
-    )"
+   (
+     subsection in (
+      'wfull2', 
+      'bdiTOTAL',
+      'Tanner1hair','Tanner2TSP_orBreast','pps1to5', 
+      'sssTOT', 'sssDIS','sssBS','sssTOT','sssES','sssTAS',
+      'cbclTAffProb', 'cbclTInternal', 'cbclTWithDep', 'cbclTAnxProb', 'cbclTAnxDep',
+      'cdiTOTAL', 'cdiT', 'cdiB', 'cdiA', 'cdiE', 'cdiC', 'cdiD' 
+     ) 
+     or 
+      vt.taskName in ('YSR','ASR')
+    )
+    "
 
 # connect to SQL server
 con <- dbConnect(RMySQL::MySQL(),host='arnold.wpic.upmc.edu', 'lncddb3_test','lncd','B@ngal0re')
@@ -40,21 +43,26 @@ df.full <- db.mrg %>% mutate(scanage=as.vector(difftime(dateOfScan,DOB,units="da
 df.sr <- df.full %>% mutate(agediff=round(surveyage-scanage,3)) %>%
      mutate(taskName=gsub('^YSR|^ASR','SR',taskName)) %>%  # merge ysr and asr for good
      mutate(subsection=gsub('^ysr|^asr','sr',subsection)) %>%  
-     mutate(subsection=gsub('srTWithDep','srTWithdrawn',subsection)) 
+     # rename ysr to asr fields
+     mutate(subsection=gsub('srTOppDefProb','srTAntiSocProb',subsection))  %>%
+     mutate(subsection=gsub('srTWithDep'   ,'srTWithdrawn',subsection))  %>%
+     mutate(subsection=gsub('srTAffProb'   ,'srTDepProb',subsection))  
+
 
 # save this giant thing with all the values
 write.csv(df.sr,file="LunaSelectSurvey_AllValues.csv",row.names=F,quote=F)
 
 # select values closest to scan date, spread into wide format
 # for aduit, provide agediff
-dt.tab.age <-df.sr %>% 
+dt.tab.age.long <-df.sr %>% 
      unite(tasksec,c(taskName,subsection)) %>%
      group_by(LunaID,dateOfScan,tasksec) %>%
      filter(min_rank(abs(agediff))==1) %>%
      ungroup %>%
      select(-surveyage) %>% 
-     unite(ageval,c(value,agediff), sep=' ') %>% 
-     spread(tasksec,ageval)
+     unite(ageval,c(value,agediff), sep=' ') %>%
+     filter(!grepl('scorePath|complete',tasksec,perl=T))
+dt.tab.age <- dt.tab.age.long %>% spread(tasksec,ageval)
 
 write.csv(dt.tab.age,file="LunaSelectSurvey_WithAgeDiff.csv",row.names=F,quote=F)
 
