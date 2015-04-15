@@ -9,7 +9,7 @@ lunas$dateOfScan <-  as.Date(as.character(lunas$dateOfScan),format="%Y%m%d")
 
 # SQL code to get all the suvery data we are interested in
 cumlquery <- "
-select pe.value as LunaID,DOB, age as surveyage, taskName, subsection, vt.value
+select pe.value as LunaID,DOB, age as surveyage,visitdate, taskName, subsection, vt.value
  from visitsTasks as vt 
  join visits as v on vt.visitid=v.visitid
  join peopleEnroll as pe on v.peopleid=pe.peopleid
@@ -55,15 +55,16 @@ write.csv(df.sr,file="LunaSelectSurvey_AllValues.csv",row.names=F,quote=F)
 # select values closest to scan date, spread into wide format
 # for aduit, provide agediff
 dt.tab.age.long <-df.sr %>% 
-     unite(tasksec,c(taskName,subsection)) %>%
-     group_by(LunaID,dateOfScan,tasksec) %>%
+     filter(!grepl('scorePath|complete',subsection,perl=T)) %>%
+     group_by(LunaID,dateOfScan,taskName,subsection) %>%
      filter(abs(agediff)<1 ) %>%  #WF20150315 -- older stuff not useful 
      filter(min_rank(abs(agediff))==1) %>%
      ungroup %>%
-     select(-surveyage) %>% 
-     unite(ageval,c(value,agediff), sep=' ') %>%
-     filter(!grepl('scorePath|complete',tasksec,perl=T))
-dt.tab.age <- dt.tab.age.long %>% spread(tasksec,ageval)
+     unite(ageval,c(value,agediff,visitdate), sep=' ') %>%
+     select(-surveyage) 
+dt.tab.age <- dt.tab.age.long %>%
+              unite(tasksec,c(taskName,subsection)) %>%
+              spread(tasksec,ageval) 
 
 write.csv(dt.tab.age,file="LunaSelectSurvey_WithAgeDiff.csv",row.names=F,quote=F)
 
@@ -72,11 +73,33 @@ write.csv(dt.tab.age,file="LunaSelectSurvey_WithAgeDiff.csv",row.names=F,quote=F
 nthword <- function(x,n=1) { strsplit(x,' ')[[1]][n] }
 
 # undo age part, here for ref
-dt.tab.age %>%
+dt.noage <- dt.tab.age %>%
   group_by(LunaID,scanage,dateOfScan) %>%
-  summarise_each(funs(nthword)) %>% 
+  summarise_each(funs(nthword))
+
+dt.noage %>% 
   write.csv(file="LunaSelectSurvey.csv",row.names=F,quote=F)
 
+# do we have repeats
+dt.noage %>% group_by(LunaID) %>% summarise_each(funs(length(unique(.,incomparables=NA)))) %>% group_by(LunaID,dateOfScan,scanage) %>% 
+ summarise_each(funs(.-scanage))  %>% print
+
+##  what are the dates
+# extract only the date of the picked SR
+vdates <- dt.tab.age %>%
+  group_by(LunaID,scanage,dateOfScan) %>%
+  summarise_each(funs(nthword(.,3))) %>%
+  gather(tsec,val,-LunaID,-scanage,-dateOfScan) %>%
+  filter(!is.na(val)) %>%
+  separate(tsec,c('task','s'),extra="merge") %>%
+  group_by(LunaID,scanage,dateOfScan,task) %>%
+  summarise(date=paste(unique(val),collapse=" "))  %>%
+  spread(task,date) 
+SRdate <- vdates %>% select(LunaID,dateOfScan,SR)
+
+
+merge(SRdate,dt.noage) %>% 
+  write.csv(file="LunaSelectSurveySRdate.csv",row.names=F,quote=F)
 ########
 ## look at difference between ages of survey responses and scan
 ########
@@ -103,3 +126,5 @@ dt.ages %>%
   gather(section,agediff,-LunaID,-scanage,-group,na.rm=T) %>% 
   group_by(section,group) %>% 
   summarise(mu=mean(agediff),low=min(agediff),high=max(agediff),n=n() )
+
+dt.tab.age %>% group_by(LunaID)
