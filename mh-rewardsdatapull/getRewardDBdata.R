@@ -121,6 +121,34 @@ print(p)
 ################ 
 # 3. select subsections, format data for export
 ################ 
+## ASR vs YSR
+# ASR ONLY
+# asrtmeanadapt  
+# asrtperstrength   
+# asrtintrusive  
+# asrtcriticalitems 
+# asrttobaccotime   
+# asrtalcohol 
+# asrtdrugs   
+# asrtmeansubstuse  
+# asrtavoidpersprob 
+# SHARE
+# asrtanxdep  ysrtanxdep
+# asrtthoprob ysrtthoprob
+# asrtattprob ysrtattprob
+# asrtaggbehav   ysrtaggbehav
+# asrtrulebreak  ysrtrulebreak
+# asrtinternal   ysrtinternal
+# asrtexternal   ysrtexternal
+# asrttotalprob  ysrttotalprob
+# asrtanxprob ysrtanxprob
+# asrtsomprob ysrtsomprob
+# asrtadhprob ysrtadhprob
+# asrtsomcomp ysrtsomcomp
+# RENAME
+# asrtantisocprob   ysrtoppdefprob
+# asrtdepprob ysrtaffprob
+# asrtwithdrawn  ysrtwithdep
 
 # * wfull2 is part of wfull4 -- not everyone did all 4 
 #     Jen: wfull2 and wfull4 are the iq scores- wfull2/4_t are the sums of t scores used to calculate iq
@@ -129,13 +157,25 @@ print(p)
 # * ditching all of Barrat
 dt.selected <- dt.m %>% 
             ungroup %>%
-            filter( subsr %in% 
-                      c('wfull2','*srTInternal','*srTExternal','*srTAnxDep',
-                        '*srTAnxProb','*srTWithDep','*srTWithdrawn','*srTThoProb',
-                        '*srTAttProb','*srTAggBehav','tsr', 'sssTOT') 
-             ) %>%
-             mutate(taskName=gsub('^YSR|^ASR','*SR',taskName)) %>%  # merge ysr and asr for good
-             unite(task.sub,taskName,subsr)
+            # grab only what we want
+            #filter( subsr %in% 
+            #          c('wfull2','*srTInternal','*srTExternal','*srTAnxDep',
+            #            '*srTAnxProb','*srTWithDep','*srTWithdrawn','*srTThoProb',
+            #            '*srTAttProb','*srTAggBehav','tsr', 'sssTOT') 
+            # ) %>%
+            filter(subsr %in% c('wfull2','wfull4','tsr','sssTOT') | taskName %in% c('ASR','YSR') ) %>%
+
+            # remove task differences
+            mutate(taskName=gsub('^YSR|^ASR','*SR',taskName)) %>%  # merge ysr and asr for good
+            mutate(subsection=gsub('^ysr|^asr','sr',subsection)) %>%  
+
+            # rename ysr to asr fields
+            mutate(subsection=gsub('srTOppDefProb','srTAntiSocProb',subsection))  %>%
+            mutate(subsection=gsub('srTWithDep'   ,'srTWithdrawn',subsection))  %>%
+            mutate(subsection=gsub('srTAffProb'   ,'srTDepProb',subsection))  %>%
+
+            # task and section together
+            unite(task.sub,taskName,subsr)
 
 # take the subsection closest to scan age (min_rank again b/c some have YSR+ASR)
 dt.sr       <- dt.selected      %>%
@@ -150,7 +190,7 @@ dt.tabular  <- dt.sr %>%
 
 names(dt.tabular) <- gsub('\\*','',names(dt.tabular))
 
-write.table(dt.tabular,file='LunaSelectSurvey.csv',sep=",",row.names=F)
+write.table(dt.tabular,file='LunaSelectSurvey.csv',sep=",",row.names=F,quote=F)
 
 #######
 # 4.  show missing
@@ -214,7 +254,8 @@ select pe.value as LunaID, age, taskName, subsection, vt.value
     'ysrTThoProb','asrTThoProb',
     'ysrTAnxProb','asrTAnxProb',
     'ysrTWithDep','asrTWithdrawn',
-    'ysrTAttProb','asrTAttProb')"
+    'ysrTAttProb','asrTAttProb')
+    "
 
 db.res <- dbGetQuery(con,cumlquery)
 

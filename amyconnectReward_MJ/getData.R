@@ -57,6 +57,7 @@ write.csv(df.sr,file="LunaSelectSurvey_AllValues.csv",row.names=F,quote=F)
 dt.tab.age.long <-df.sr %>% 
      unite(tasksec,c(taskName,subsection)) %>%
      group_by(LunaID,dateOfScan,tasksec) %>%
+     filter(abs(agediff)<1 ) %>%  #WF20150315 -- older stuff not useful 
      filter(min_rank(abs(agediff))==1) %>%
      ungroup %>%
      select(-surveyage) %>% 
