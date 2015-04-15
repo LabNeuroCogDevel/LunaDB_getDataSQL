@@ -72,17 +72,6 @@ write.csv(dt.tab.age,file="LunaSelectSurvey_WithAgeDiff.csv",row.names=F,quote=F
 # to extract only value (or only age) from 'value age' pairing in dt.tab.age:
 nthword <- function(x,n=1) { strsplit(x,' ')[[1]][n] }
 
-# undo age part, here for ref
-dt.noage <- dt.tab.age %>%
-  group_by(LunaID,scanage,dateOfScan) %>%
-  summarise_each(funs(nthword))
-
-dt.noage %>% 
-  write.csv(file="LunaSelectSurvey.csv",row.names=F,quote=F)
-
-# do we have repeats
-dt.noage %>% group_by(LunaID) %>% summarise_each(funs(length(unique(.,incomparables=NA)))) %>% group_by(LunaID,dateOfScan,scanage) %>% 
- summarise_each(funs(.-scanage))  %>% print
 
 ##  what are the dates
 # extract only the date of the picked SR
@@ -96,10 +85,57 @@ vdates <- dt.tab.age %>%
   summarise(date=paste(unique(val),collapse=" "))  %>%
   spread(task,date) 
 SRdate <- vdates %>% select(LunaID,dateOfScan,SR)
+dt.SRmerg <- merge(SRdate,dt.noage) 
+write.csv(dt.SRmerg,file="LunaSelectSurveySRdate.csv",row.names=F,quote=F)
+dt.SRmerg %>% select(LunaID,dateOfScan,SR) %>% 
+              group_by(LunaID,SR) %>%
+              summarise(n=n(),dates=paste(dateOfScan,collapse=" ")) %>%
+              filter(LunaID %in% c(10567,10568,10572)) %>% print
+#  LunaID       SR  n                 dates
+#  10567 2010-01-13 2 2009-01-14 2010-08-10
+#  10568 2010-01-06 2 2009-01-12 2010-06-19
+#  10572 2011-08-04 2 2011-01-12 2012-05-14
+##
+##
+#select pe.value as luna, visitdate,taskName from visitstasks as vt
+# join visits as v on v.visitID = vt.visitID
+# join peopleEnroll as pe on pe.peopleID = v.peopleID
+# where pe.enrollType like 'LunaID' and pe.value in (10567,10568,10572)
+# group by luna,visitdate,taskName
+# having taskName like 'ASR' or taskName like 'YSR'
+##
+#### 10567 -> 2009 has no asr
+# 10567 2010-01-13  ASR
+# 10567 2011-08-15  ASR
 
+##### 10568 -> 2009 has no asr
+# 10568 2010-01-06  ASR
+# 10568 2011-07-05  ASR
 
-merge(SRdate,dt.noage) %>% 
-  write.csv(file="LunaSelectSurveySRdate.csv",row.names=F,quote=F)
+##### 10572 -> 2012 has no as
+# 10572 2008-06-10  ASR
+# 10572 2010-01-11  ASR
+# 10572 2011-08-04  ASR
+
+# undo age part, here for ref
+dt.noage <- dt.tab.age %>%
+  group_by(LunaID,scanage,dateOfScan) %>%
+  summarise_each(funs(nthword))
+
+# remove SRs with overlapping dates
+# grab by hand as "explained" above
+sridx=grepl('SR_',names(dt.noage))
+rowidx=function(l,d) dt.noage$LunaID==l&dt.noage$dateOfScan==d
+dt.noage[rowidx(10567,'2009-01-14'), sridx] <- NA
+dt.noage[rowidx(10568,'2009-01-12'), sridx] <- NA
+dt.noage[rowidx(10572,'2012-05-1$'), sridx] <- NA
+
+dt.noage %>% 
+  write.csv(file="LunaSelectSurvey.csv",row.names=F,quote=F)
+
+# do we have repeats
+dt.noage %>% group_by(LunaID) %>% summarise_each(funs(length(unique(.,incomparables=NA)))) %>% group_by(LunaID,dateOfScan,scanage) %>% 
+ summarise_each(funs(.-scanage))  %>% print
 ########
 ## look at difference between ages of survey responses and scan
 ########
