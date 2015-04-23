@@ -31,18 +31,27 @@ datainsert(conn,'ldtemp',{'id','age','vd'},[master_ds.subID,master_ds.age,master
 % select all visits joined
 c=exec(conn,[ ...
 'select ' ...
- 't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d") as bdate'...
+ 't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d") '...
   'from ldtemp as t '                                 ... % our fresh temp table
   'join peopleEnroll as pe on pe.value = t.id '       ... % matched to lunaids
-  'join visits as v on pe.peopleid = v.peopleid '     ... % matched to visits
-  'join visitsStudies as s on v.visitid = s.visitid ' ... % matched to study
+  'left join visits as v on pe.peopleid = v.peopleid '     ... % matched to visits
+  'left join visitsStudies as s on v.visitid = s.visitid ' ... % matched to study
   'where v.visitType like "Behavioral" '              ... % only behavioral
   '  and s.studyName like "Reward%"    '              ... % only rewards
 ]);
 c=fetch(c);
-d=sortrows(c.Data,{'id','vd','adiff'});
-% 1:5 b/c grpstats panics on date as a string
-ga=grpstats(d(:,1:5),{'id','vd'})
-
-
 close(conn)
+
+% sort and then find repeat id+vd
+% exclude repeats
+d=sortrows(c.Data,{'id','vd','adiff'});
+d.discard=[0;( d.id( 1:(end-1) )  + d.vd( 1:(end-1) ) ) == ( d.id(2:end) + d.vd(2:end) )  ]
+BhvScnMerged=d(d.discard==0,:)
+
+% save and be done
+save BhvScnMerged 
+
+%% really wanted to use grpstats to do the filtering, couldn't make it work
+% 1:5 b/c grpstats panics on date as a string
+%ga=grpstats(d(:,1:5),{'id','vd'})
+
