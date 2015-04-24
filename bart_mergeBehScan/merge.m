@@ -8,8 +8,10 @@
 
 %% database access settings
 % java db driver
-if exist('/usr/share/java/mysql-connector-java-bin.jar','file')
- javaaddpath('/usr/share/java/mysql-connector-java-bin.jar') 
+sqljar='/usr/share/java/mysql-connector-java-bin.jar';
+% load if it exists and isn't loaded
+if exist(sqljar,'file') && ~strmatch(sqljar,javaclasspath)
+ javaaddpath(sqljar) 
 end
 % return data as table 
 setdbprefs('DataReturnFormat','dataset')
@@ -19,7 +21,7 @@ setdbprefs('DataReturnFormat','dataset')
 load('master_ds_20150401.mat')
 
 % connect to DB
-conn = database('lncddb3','localadmin','local!123','com.mysql.jdbc.Driver', 'jdbc:mysql://arnold.wpic.upmc.edu:3306/lncddb3')
+conn = database('lncddb3','localadmin','local!123','com.mysql.jdbc.Driver', 'jdbc:mysql://arnold.wpic.upmc.edu:3306/lncddb3');
 
 % put data in DB (way faster than for loop 'select+join')
 exec(conn,'DROP TABLE IF EXISTS ldtemp');
@@ -31,7 +33,7 @@ datainsert(conn,'ldtemp',{'id','age','vd'},[master_ds.subID,master_ds.age,master
 % select all visits joined
 c=exec(conn,[ ...
 'select ' ...
- 't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d") '...
+ 't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d")'...
   'from ldtemp as t '                                 ... % our fresh temp table
   'join peopleEnroll as pe on pe.value = t.id '       ... % matched to lunaids
   'left join visits as v on pe.peopleid = v.peopleid '     ... % matched to visits
@@ -40,16 +42,34 @@ c=exec(conn,[ ...
   '  and s.studyName like "Reward%"    '              ... % only rewards
 ]);
 c=fetch(c);
-close(conn)
-
 % sort and then find repeat id+vd
 % exclude repeats
 d=sortrows(c.Data,{'id','vd','adiff'});
-d.discard=[0;( d.id( 1:(end-1) )  + d.vd( 1:(end-1) ) ) == ( d.id(2:end) + d.vd(2:end) )  ]
-BhvScnMerged=d(d.discard==0,:)
+close(conn);
 
-% save and be done
-save BhvScnMerged 
+% matlab doesn't respect SQL 'as bhvdate'. Force it
+d.Properties.VarNames{6} = 'bhvdate';
+d.discard=[0;( d.id( 1:(end-1) )  + d.vd( 1:(end-1) ) ) == ( d.id(2:end) + d.vd(2:end) )  ];
+BhvScnMerged=d(d.discard==0,:);
+
+%% checks
+% no scan visit should be more than a year from it's matching behave
+if length(BhvScnMerged(BhvScnMerged.adiff>1,:)) > 0
+  fprintf('Some visits are too far from a scan!\n')
+  BhvScnMerged(BhvScnMerged.adiff>1,:)
+end
+
+% repeated behaves means behave date was matched to more than one scan 
+id_=arrayfun(@(x) [num2str(x) '_'], BhvScnMerged.id, 'UniformOutput',0 );
+allbehavVisits =  cell2mat([ id_ BhvScnMerged.bhvdate]);
+[~,~,ic] = unique(allbehavVisits,'rows');
+if any(accumarray(ic,1)>1)
+ fprintf('some behaves are repeated!\n')
+end
+
+%% save 
+save BhvScnMerged  BhvScnMerged;
+
 
 %% really wanted to use grpstats to do the filtering, couldn't make it work
 % 1:5 b/c grpstats panics on date as a string
