@@ -33,26 +33,50 @@ datainsert(conn,'ldtemp',{'id','age','vd'},[master_ds.subID,master_ds.age,master
 % select all visits joined
 c=exec(conn,[ ...
 'select ' ...
- 't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d")'...
+ 't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d"), '...
+ 'visitType, studyName '...
   'from ldtemp as t '                                 ... % our fresh temp table
-  'join peopleEnroll as pe on pe.value = t.id '       ... % matched to lunaids
+  'left join peopleEnroll as pe on pe.value = t.id '       ... % matched to lunaids
   'left join visits as v on pe.peopleid = v.peopleid '     ... % matched to visits
   'left join visitsStudies as s on v.visitid = s.visitid ' ... % matched to study
-  'where v.visitType like "Behavioral" '              ... % only behavioral
-  '  and s.studyName like "Reward%"    '              ... % only rewards
-]);
+]); 
+% % -- do this filtering with matlab
+%   'where v.visitType like "Behavioral" '              ... % only behavioral
+%   '  and s.studyName like "Reward%"    '              ... % only rewards
+% ]);
 c=fetch(c);
-% sort and then find repeat id+vd
-% exclude repeats
-d=sortrows(c.Data,{'id','vd','adiff'});
+bigd=c.Data;
 close(conn);
+
+%% filter
+% want only the Reward Behaviorals.. but sometimes (RewardR21?) study is null
+% we could also do this in SQL
+smalld = bigd( strcmp(bigd.visitType,'Behavioral')&(strncmp(bigd.studyName,'Reward',6)|strcmp(bigd.studyName,'null') ), : );
+d=sortrows(smalld(:,1:6),{'id','vd','adiff'});
 
 % matlab doesn't respect SQL 'as bhvdate'. Force it
 d.Properties.VarNames{6} = 'bhvdate';
-d.discard=[0;( d.id( 1:(end-1) )  + d.vd( 1:(end-1) ) ) == ( d.id(2:end) + d.vd(2:end) )  ];
-BhvScnMerged=d(d.discard==0,:);
+
+
+%% remove dups
+% create uniq subjid+visitid number
+u_idvst = d.id*100000 + d.vd;
+% find where id+visit does not change (set for discarding)
+discard=[0; u_idvst( 1:(end-1) )  ==  u_idvst(2:end)  ];
+% keep only those not discarded
+BhvScnMerged=d(discard==0,:);
+
+% [~,i,~] = unique(u_idvst)
+% BhvScnMerged=d(i,:);
 
 %% checks
+% did we lose any scan visits
+lostids = setdiff(master_ds.subID,d.id);
+if ~isempty(lostids) 
+ fprintf('could not find behave visits (or SQL join error) for %d subjs:\n', length(lostids) )
+ fprintf('%d ', lostids); fprintf('\n');
+end
+
 % no scan visit should be more than a year from it's matching behave
 if length(BhvScnMerged(BhvScnMerged.adiff>1,:)) > 0
   fprintf('Some visits are too far from a scan!\n')
