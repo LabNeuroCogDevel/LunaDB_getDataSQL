@@ -17,7 +17,7 @@ end
 setdbprefs('DataReturnFormat','dataset')
 
 
-% load data
+% load inital list
 load('master_ds_20150401.mat')
 
 % connect to DB
@@ -34,7 +34,7 @@ datainsert(conn,'ldtemp',{'id','age','vd'},[master_ds.subID,master_ds.age,master
 c=exec(conn,[ ...
 'select ' ...
  't.id, t.vd, abs(t.age-v.age) as adiff, t.age as scanage,v.age as visitage, DATE_FORMAT(v.visitDate,"%Y%m%d"), '...
- 'visitType, studyName '...
+ 'visitType, studyName, v.visitid as vid, pe.peopleid as pid '...
   'from ldtemp as t '                                 ... % our fresh temp table
   'left join peopleEnroll as pe on pe.value = t.id '       ... % matched to lunaids
   'left join visits as v on pe.peopleid = v.peopleid '     ... % matched to visits
@@ -46,13 +46,12 @@ c=exec(conn,[ ...
 % ]);
 c=fetch(c);
 bigd=c.Data;
-close(conn);
 
 %% filter
 % want only the Reward Behaviorals.. but sometimes (RewardR21?) study is null
 % we could also do this in SQL
 smalld = bigd( strcmp(bigd.visitType,'Behavioral')&(strncmp(bigd.studyName,'Reward',6)|strcmp(bigd.studyName,'null') ), : );
-d=sortrows(smalld(:,1:6),{'id','vd','adiff'});
+d=sortrows(smalld(:,[1:6,9,10]),{'id','vd','adiff'});
 
 % matlab doesn't respect SQL 'as bhvdate'. Force it
 d.Properties.VarNames{6} = 'bhvdate';
@@ -93,8 +92,45 @@ end
 
 %% save 
 save BhvScnMerged  BhvScnMerged;
+BhvScnMerged.bhvdate= cellfun(@str2num, BhvScnMerged.bhvdate);
 
+%% now go back to sql and get the SensationSeeking stuff
+% extract data
+columns={'id','vd','adiff','age','age_5','bhvdate','visitID','peopleID'};
+vals = cell2mat(cellfun(@(x) BhvScnMerged.(x), columns, 'UniformOutput',0));
 
+% make sql table
+exec(conn,'DROP TABLE IF EXISTS ldtemp');
+exec(conn,['CREATE TEMPORARY TABLE ldtemp ( ' ...
+           ' id INTEGER, vd integer, adiff REAL,'...
+           ' age REAL,age_5 REAL, bhvdate integer,'...
+           ' visitid INTEGER, peopleid INTEGER)']);
+
+datainsert(conn,'ldtemp',columns,vals);
+
+% find all the sensation seeking data for the subjects, ingore notes and completed
+c=exec(conn,[ ...
+ 'select * from ldtemp t'...
+ ' left join visitstasks vt on vt.taskName ' ...
+ ' like "SensationSeeking" and vt.visitid = t.visitID and subsection not in ("Notes", "completed")']);
+c=fetch(c);
+c=c.Data;
+
+% null -> Inf
+v=c.value;
+for i=find(cellfun(@(x) ~isempty(strmatch(x,'null')), v))', v{i}='Inf'; end
+c.value= cellfun(@str2num,v);
+c.taskName = [];
+
+% from tall to wide
+BhvScnMergedSS =  unstack(c,'value','subsection');
+% if there was no value collected, we have 'null' for subsection. we dont want that column
+BhvScnMergedSS.null = [];
+
+%save
+save BhvScnMergedSS  BhvScnMergedSS;
+
+close(conn);
 %% really wanted to use grpstats to do the filtering, couldn't make it work
 % 1:5 b/c grpstats panics on date as a string
 %ga=grpstats(d(:,1:5),{'id','vd'})
