@@ -22,6 +22,7 @@ select
 
 
 d<-dbGetQuery(con,query)
+write.table(d,file="taskBreakdown.txt",row.names=F,quote=F,sep="\t")
 
 d2 <- gather(d,dt,visitdate,c(firstvisit,lastvisit)) %>% mutate(visitdate=as.Date(visitdate))
 p <- ggplot(d2,aes(x=taskName,y=visitdate,group=taskName,color=mode,size=totalvisits))+geom_line()
