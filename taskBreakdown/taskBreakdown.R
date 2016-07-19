@@ -27,6 +27,8 @@ write.table(d,file="taskBreakdown.txt",row.names=F,quote=F,sep="\t")
 d2 <- gather(d,dt,visitdate,c(firstvisit,lastvisit)) %>% mutate(visitdate=as.Date(visitdate))
 p <- ggplot(d2,aes(x=taskName,y=visitdate,group=taskName,color=mode,size=totalvisits))+geom_line()
 date_breaks("1 year")
-p + theme_bw() +theme(axis.text.x=element_text(angle=65,hjust=1))
+p <- p + theme_bw() +theme(axis.text.x=element_text(angle=65,hjust=1)) + facet_wrap(~study)
 ggsave('alltasksOvertime.pdf',p)
 
+
+## TODO: select by study
