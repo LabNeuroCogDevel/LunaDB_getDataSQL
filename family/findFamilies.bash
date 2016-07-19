@@ -37,5 +37,6 @@
 
 )|
  ## remove duplicates
+ sed 's/ $//g'|
  sort |
  uniq  > allfamilies_redudant.txt
