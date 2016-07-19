@@ -1,4 +1,20 @@
 #!/usr/bin/env bash
+#
+#
+# group LunaIDs that might be in the same family
+# 
+#
+
+## two ways to find families:
+# they share contacts
+[ ! -r postgres_maybefamily.txt ] && psql  lncddb lncd  <family.sql |sed 1,5d |sed '$d' > postgres_maybefamily.txt
+
+# the RA notes say they are siblings
+[ ! -r allnoteids.txt ] && ./bynote.bash
+
+
+# parse maybefamiliy to look like bynote
+# cat both so we can uniq them
 
 (
  # go through each pair in postgres export (based on contact info)
