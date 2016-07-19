@@ -1,3 +1,4 @@
 # find families of lunaid
 
-see [`findFamilies.bash`](./findFamlies.bash)
+see [`findFamilies.bash`](./findFamilies.bash)
+
